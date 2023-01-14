@@ -42,7 +42,7 @@ img {
 }
 
 .container {
-    width: 90%;
+    width: 95%;
     max-width: 1440px;
     margin: 0 auto;
 }
@@ -788,7 +788,7 @@ input:focus{
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
-    font-size: 2.8rem;
+    font-size: 2.95rem;
     line-height: 81px;
     margin-bottom: 1.25rem;
 }
@@ -877,6 +877,29 @@ input:focus{
     left: 0;
     height: 400px;
 }
+.code-wrap3{
+    background: linear-gradient(119.7deg, rgba(26, 188, 250, 0.8) 3.99%, rgba(28, 125, 243, 0.8) 90.81%);
+    border-radius: 52px;
+    padding: 5rem 1.5rem 2.3rem 1.5rem;
+    margin-bottom: 3rem;
+}
+.code-wrap3 h3{
+    width: 72%;
+    margin: 0 auto;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.7rem;
+    padding-left: 6rem;
+    line-height: 42px;
+    margin-bottom: 4rem;
+    color: #FFFFFF;
+}
+.code-wrap3 img{
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+}
 
 @media screen and (max-width:970px){
     .code-wrap1{
@@ -902,6 +925,12 @@ input:focus{
     }
 }
 
+/* ######## WHY #######*/
+
+.whyProblem{
+    display: block;
+    margin: 0 auto;
+}
 
 
 /* ######## FOOTER #######*/
