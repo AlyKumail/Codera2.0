@@ -645,12 +645,12 @@ img {
     backdrop-filter: blur(32.5px);
     /* Note: backdrop-filter has minimal browser support */
     border-radius: 5px 0px 0px 5px;
-    padding: .9em 1.3em;
+    padding: .9rem 1.3em;
     width: 25.5%;
     max-width: 380px;
     font-family: 'Poppins';
     font-size: 1rem;
-
+    border: none;
 
 }
 .hero-form input::placeholder{
@@ -674,7 +674,7 @@ input:focus{
     border-radius: 0px 5px 5px 0px;
     color: white;
     font-weight: 500;
-    padding: .8em 2.1em;
+    padding: .8rem 2.1em;
 
 }
 .hero-form button:hover{
