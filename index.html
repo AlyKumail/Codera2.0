@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap"
+            rel="stylesheet"
+        />
+        <title>Codera App</title>
+    </head>
+    <body>
+        <!-- News -->
+        <div class="news">
+            <h3>Codera 2.0 Is now out! Read all about this <u><a href="#">update here!</a></u> <img src="./images/newsArrow.png" alt=""> </h3>
+        </div>
+
+        <!-- Modals -->
+        <div class="modal" id="loginModal">
+            <div class="modalForm">
+                <img id="crossbarLogin" src="./images/crossbar.png" alt="" />
+                <h2>Welcome Back!</h2>
+                <h3>Continue your streak today!</h3>
+                <p class="secondayPara">Earn Daily Rewards!</p>
+                <a href="#" class="modalBtn gr1"
+                    ><img src="./images/google.png" alt="" />
+                    <span>Log in With Google</span>
+                </a>
+                <div class="partition">
+                    <span class="linex"></span>
+                    <span>OR</span>
+                    <span class="linex"></span>
+                </div>
+                <form>
+                    <input type="text" placeholder="Username" />
+                    <input type="text" placeholder="Password" />
+                </form>
+                <a href="./dashboard.html" class="modalBtn gr2"> Begin </a>
+                <a class="forgot" href="#">Forgot Password?</a>
+                <a class="forgot" href="#">Forgot Username?</a>
+            </div>
+        </div>
+        <div id="joinModal">
+            <div class="modalForm">
+                <img id="crossbar" src="./images/crossbar.png" alt="" />
+                <h2>Welcome</h2>
+                <h3>Congratulations on taking the first step.</h3>
+                <p class="secondayPara">
+                    We wil never spam your inbox with annoying emails
+                </p>
+                <a href="#" class="modalBtn gr1"
+                    ><img src="./images/google.png" alt="" />
+                    <span>Log in With Google</span>
+                </a>
+                <div class="partition">
+                    <span class="linex"></span>
+                    <span>OR</span>
+                    <span class="linex"></span>
+                </div>
+                <form>
+                    <input type="text" placeholder="Name" />
+                    <input type="text" placeholder="Email" />
+                    <input type="text" placeholder="Password" />
+                </form>
+                <button href="#" class="modalBtn gr2">Begin</button>
+            </div>
+        </div>
+        <div id="mobileNav" class="mobileNav">
+            <img
+                id="navCross"
+                class="navCross"
+                src="./images/navCross.png"
+                alt=""
+            />
+            <div class="logo">
+                <img class="logoImg" src="./images/logo.png" alt="" />
+                <h1 class="header">COD<span class="blueGradient">ERA</span></h1>
+            </div>
+            <div>
+                <ul class="NavLinks">
+                    <li>
+                        <a class="NavItems NavActive" href="#"> Home </a>
+                    </li>
+                    <li>
+                        <a class="NavItems" href="#"> Code </a>
+                    </li>
+                    <li>
+                        <a class="NavItems" href="#"> Shop </a>
+                    </li>
+                    <li>
+                        <a class="NavItems" href="#"> Leaderboard </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="NavButtons">
+                <a id="loginBtnM" class="NavButtonsItem" href="#"> Log In </a>
+                <a
+                    id="joinNowM"
+                    class="NavButtonsItem NavButtonsItemBordered"
+                    href="#"
+                >
+                    Join Now
+                </a>
+            </div>
+        </div>
+        <div class="container">
+            <div class="Navbar">
+                <div class="logo">
+                    <img class="logoImg" src="./images/logo.png" alt="" />
+                    <h1 class="header">
+                        COD<span class="blueGradient">ERA</span>
+                    </h1>
+                </div>
+                <img
+                    class="hamburger"
+                    id="hamburger"
+                    src="./images/hamburger.png"
+                    alt=""
+                />
+                <div class="desktop-nav">
+                    <ul class="NavLinks">
+                        <li>
+                            <a class="NavItems NavActive" href="#"> Home </a>
+                        </li>
+                        <li>
+                            <a class="NavItems" href="#"> Code </a>
+                        </li>
+                        <li>
+                            <a class="NavItems" href="#"> Shop </a>
+                        </li>
+                        <li>
+                            <a class="NavItems" href="#"> Leaderboard </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="NavButtons desktop-nav">
+                    <a id="loginBtn" class="NavButtonsItem" href="#">
+                        Log In
+                    </a>
+                    <a
+                        id="joinNow"
+                        class="NavButtonsItem NavButtonsItemBordered"
+                        href="#"
+                    >
+                        Sign Up
+                    </a>
+                </div>
+            </div>
+            <!-- Hero -->
+            <div class="hero-container">
+                <div class="contianer">
+                    <div class="hero">
+                        <h2>
+                            The Next <span class="blueGradText">Era</span> of Coding
+                            Education
+                        </h2>
+                        <p>Harnessed with innovation. Designed for student learning. Celebrated with gamification & fun. Welcome to the platform students and parents love.</p>
+                        <form action="#" class="hero-form">
+                            <input type="email" name="email" id="email" placeholder="Email Address">
+                            <button type="submit">Sign Up for CODERA</button>
+                            <a
+                        id="joinNow"
+                        class="NavButtonsItem NavButtonsItemBordered"
+                        href="#"
+                    >
+                        <span class="form-main-text">Try the demo</span>
+                        <span><i>No signup required</i></span>
+                    </a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stats -->
+            <div class="stats-container">
+                <div class="container">
+                    <div class="stats">
+                        <div class="stats-item">
+                            <h3>83<span class="blueGradText">+</span> million</h3>
+                            <p>Developers</p>
+                        </div>
+                        <div class="stats-item">
+                            <h3>83<span class="blueGradText">+</span> million</h3>
+                            <p>Developers</p>
+                        </div>
+                        <div class="stats-item">
+                            <h3>83<span class="blueGradText">+</span> million</h3>
+                            <p>Developers</p>
+                        </div>
+                        <div class="stats-item">
+                            <h3>83<span class="blueGradText">+</span> million</h3>
+                            <p>Developers</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Comfortable -->
+            <div class="comfortable-container">
+                <div class="container">
+                    <div class="comfortable">
+                        <div class="left">
+                            <img src="./images/left-mockup.png" alt="">
+                        </div>
+                        <div class="mid">
+                            <img class="mid-img" src="./images/comfortable.png" alt="">
+                            <img src="./images/comfortableGradBar.png" alt="">
+                        </div>
+                        <div class="right">
+                            <img src="./images/right-mockup.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- WHY CODE -->
+            <div class="code-container">
+                <div class="container">
+                    <div class="code">
+                        <h2><span class="blue">Why today’s youth </span>need <span class="blue">to learn how to code.</span> </h2>
+
+                    </div>
+                </div>
+            </div>
+            
+            
+
+           <!--Footer-->
+        <!-- <div class="Footer-Container">
+            <div class="container flex-between-center">
+                <div class="links">
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Learn</a>
+                </div>
+                <div class="footer-info">
+                    <div class="logo flex-between-center">
+                        <img src="./images/logo.png" alt="" />
+                        <h1>CODERA</h1>
+                    </div>
+                    <p>Check out our Privacy Policy and Terms of Service.</p>
+                    <p>All Rights Reserved. © 2022</p>
+                </div>
+                <div class="social-media">
+                    <a href="#">Contact</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Contact</a>
+                </div>
+            </div>
+            <img class="footerBar" src="./images/footerBar.png" alt="" />
+        </div> -->
+        <script src="./script.js"></script>
+    </body>
+</html>
