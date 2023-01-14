@@ -709,10 +709,14 @@ input:focus{
     margin-top: 0rem;
 }
 
+@media screen and (max-width:768px){
+    
+}
+
 
 /* ######## STATS #######*/
 .stats{
-    width: 68%;
+    width: 73%;
     color: white;
     margin: 4rem auto;
     display: flex;
@@ -775,14 +779,127 @@ input:focus{
 .blue{
     color: #1BA2F7;
 }
+.code{
+    color: white;
+    
+}
 .code h2{
     color: white;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
-    font-size: 3rem;
+    font-size: 2.8rem;
     line-height: 81px;
     margin-bottom: 1.25rem;
+}
+.code-wrap1{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.code-wrap1-left,
+.code-wrap1-right{
+    width: 49%;
+    background: rgba(171, 199, 255, 0.08);
+    border-radius: 52px;
+    padding: 2rem 3rem;
+    min-height: 520px;
+    position: relative;
+}
+.code-wrap1 h3,
+.code-wrap2 h3{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.35rem;
+    line-height: 42px;
+
+    color: #1BA2F7;
+}
+
+.code-wrap1-right .graphImg{
+    /* height: 250px; */
+    width: 90%;
+}
+.code-wrap1 p{
+    margin-bottom: 2.75rem;
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.05rem;
+    line-height: 24px;
+
+    color: #FFFFFF;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.code-wrap1-left p{
+    margin-bottom: 3.5rem;
+    
+}
+.code-wrap1 .iButton{
+    position: absolute;
+    bottom: 20px;
+    right: 40px;
+    height: 30px;
+}
+
+.code-wrap2{
+    background: rgba(171, 199, 255, 0.08);
+    border-radius: 52px;
+    padding: 2rem 3rem;
+    padding-bottom: 8rem;
+    position: relative;
+    margin: 2.5rem 0;
+}
+.quote{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 45px;
+    width: 62%;
+    margin: 3rem 0;
+    margin-right: 0;
+    margin-left: auto;
+    color: #FFFFFF;
+    padding-right: 1.7rem;
+}
+.quoteby{
+    display: block;
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin: 2.15rem 0;
+}
+.billgate{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 400px;
+}
+
+@media screen and (max-width:970px){
+    .code-wrap1{
+        flex-direction: column;
+    }
+    .code-wrap1-left,
+    .code-wrap1-right{
+        width: 80%;
+        margin: 0.5rem auto;
+        
+    }
+}
+
+@media screen and (max-width:768px){
+    .code-wrap1{
+        flex-direction: column;
+    }
+    .code-wrap1-left,
+    .code-wrap1-right{
+        width: 100%;
+        margin: 0.5rem auto;
+        
+    }
 }
 
 
