@@ -1251,11 +1251,111 @@ color: #FFFFFF;
 
 }
 
+
+/* ######## STORIES #######*/
 .stories-img{
     display: block;
-    margin: 0 auto;
+    margin: 1rem auto;
+}
+.stories h2{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2.95rem;
+    line-height: 81px;
+    margin: 2rem 0;
+    margin-bottom: .9rem;
+    color: #05D387;
+
+}
+.stories-rating{
+    display: flex;
+    margin-bottom: 3rem;
+    align-items: center;
+}
+.stories-rating img{
+    display: inline-block;
+    margin-top: -6px;
+}
+.stories-rating p{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.95rem;
+    line-height: 22px;
+    /* identical to box height */
+    margin-right: 11px;
+
+    color: #FFD659;
+}
+.stories-rating span{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: .85rem;
+    line-height: 21px;
+    /* identical to box height */
+    margin-left: 11px;
+
+    color: rgba(255, 255, 255, 0.46);
 }
 
+.stories-testimonial{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.testimonial-item{
+    background: linear-gradient(180deg, rgba(171, 199, 255, 0.08) 0%, rgba(171, 199, 255, 0.08) 100%);
+    border-radius: 22px;
+    padding: 2.1rem 3rem;
+    padding-bottom: 3rem;
+
+    margin-bottom: 1.5rem;
+}
+.testimonial-long{
+    padding-bottom: 7rem;
+}
+.flex-col-rev{
+    flex-direction: column-reverse;
+}
+.testimonial-item-header{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.testimonial-item-header img{
+    margin-right: 1rem;
+}
+.testimonial-item-header h4{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 36px;
+
+    color: #FFFFFF;
+}
+.testimonial-item-header span{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: .9rem;
+    line-height: 24px;
+
+    color: rgba(255, 255, 255, 0.5);
+}
+.testimonial-item-body p{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: rgba(255, 255, 255, 0.8);
+}
 /* ######## FOOTER #######*/
 .Footer-Container {
     background: #04080f;
