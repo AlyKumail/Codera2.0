@@ -42,7 +42,7 @@ img {
 }
 
 .container {
-    width: 95%;
+    width: 90%;
     max-width: 1440px;
     margin: 0 auto;
 }
@@ -1356,100 +1356,323 @@ color: #FFFFFF;
 
     color: rgba(255, 255, 255, 0.8);
 }
-/* ######## FOOTER #######*/
-.Footer-Container {
-    background: #04080f;
-    padding: 1.25rem 0;
-    position: relative;
-}
 
-.Footer-Container a {
-    font-family: "Space Grotesk";
+/* ######## CASE Study #######*/
+
+.caseStudy{
+    position: relative;
+    height: 640px;
+    margin: 2rem 0;
+    max-height: 640px;
+
+}
+.caseStudy-text{
+    padding-left: 4.75rem;
+    padding-top: 2.75rem;
+}
+.caseStudy .caseStudy-bg{
+    position: absolute;
+    height: 100%;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+
+}
+.caseStudy-tag{
+    font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
-    font-size: 16px;
-    line-height: 23px;
-    /* identical t  o box height */
-    margin-right: 35px;
-    color: #ffffff;
+    font-size: .85rem;
+    line-height: 24px;
+    /* identical to box height */
+    display: inline-block;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 44px;
+    padding: .6em .9em;
+    color: #FFFFFF;
+    margin-bottom: 4rem;
 }
-.footer-info {
+.caseStudy  h2{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3.3rem;
+    line-height: 70px;
+    width: 50%;
+    color: #FFFFFF;
+
+}
+.green{
+    color: #05D387;
+}
+.caseStudy-viewMore{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    bottom: 8%;
+    right: 5%;
 }
-.footer-info img {
-    margin-right: 10px;
-    max-width: 100%;
-}
-.footer-info .logo img {
-    /* width: 80px; */
-    width: 60px;
-}
-.footer-info h1 {
-    font-family: "Space Grotesk";
+.caseStudy-viewMore p{
+    font-family: 'Gloria Hallelujah';
     font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 31px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
     /* identical to box height */
 
-    text-align: center;
-    letter-spacing: 0.055em;
-
-    color: #ffffff;
+    text-decoration-line: underline;
+    margin-top: 1rem;
+    color: #FFFFFF;
 }
-.footer-info p {
-    font-family: "Space Grotesk";
+.caseStudy-link:hover{
+    opacity: .7;
+}
+
+
+
+/* ######## JOIN #######*/
+
+.join p{
+    font-family: 'Gloria Hallelujah';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 48px;
+    text-align: center;
+    
+    color: #64718E;
+}
+.join-body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12rem 0;
+    position: relative;
+    margin-top: 1rem;
+    width: 60%;
+    margin: 3rem auto;
+}
+.joinWrapImg{
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+.join-body .NavButtonsItem{
+    margin-left: 0;
+    margin-top: 2rem;
+    padding: .75em 3em !important;
+}
+.joinLeftBracImg,
+.joinRightBracImg{
+    position: absolute;
+    z-index: -1;
+}
+.joinLeftBracImg{
+    bottom: 0;
+    left: 0;
+}
+.joinRightBracImg{
+    top: 0;
+    right: 0;
+}
+.join-text{
+    width: 78%;
+    margin: 6rem auto;
+}
+.join-text p{
+    font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
-    font-size: 13px;
+    font-size: 1.1rem;
+    line-height: 30px;
+
+    color: #64718E;
+}
+.join-text .gloria{
+    font-family: 'Gloria Hallelujah';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 48px;
+    
+    color: #7C8CAE;
+}
+
+/* ######## FAQ #######*/
+.faq h2{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2.8rem;
+    line-height: 72px;
+    margin-right: .7rem;
+    color: #5D6984;
+}
+
+.faq-header{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+
+    /* justify-content: center; */
+}
+.faq-body{
+    width: 87%;
+}
+.faq-item{
+    
+    padding: .8rem 1rem;
+    /* border: 1px solid gray; */
+    cursor: pointer;
+    margin: 1.5rem 0;
+    transition: all .25s ease;
+}
+.faq-item-question{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all .25s ease;
+
+}
+.faq-item p{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 42px;
+    /* identical to box height */
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+
+
+    color: #7483A6;
+}
+.faq-item-answer{
+    transition: all .25s ease;
+    display: none;
+
+}
+.faq-item-answer p{
+    font-size: 1.2rem;
+    width: 90%;
+    margin-top: 1.25rem;
+
+}
+.faq-inactive{
+    transition: all 5s ease;
+    animation: fade 1.5s ease;
+    display: block;
+    opacity: 1;
+}
+.faq-rotateArrow{
+    transform: rotate(180deg);
+    transition: all .5s ease;
+
+}
+.faq-item-question img{
+    transition: all .5s ease;
+
+}
+@keyframes fade {
+    from {opacity: 0;}
+    to {opacity: 1}
+}
+
+/* ######## Get Started #######*/
+.getStarted{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 4rem 0;
+    padding-right: 2rem;
+}
+.getStarted-item{
+    display: flex;
+    align-items: center;
+}
+.getStarted p{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 36px;
+    margin-left: .5rem;
+    color: #FFFFFF;
+}
+
+
+/* ######## FOOTER #######*/
+.footer-container{
+    background: #04080F;
+    width: 100%;
+    max-width: 1600px !important;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 3.5rem 0 1.5rem 0;
+}
+ul{
+    list-style: none;
+}
+.footer-navbar a{
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.3rem;
+    line-height: 31px;
+    /* identical to box height */
+    margin: 1.25rem 0;
+    display: inline-block;
+    color: #7D89A2;
+}
+.footer-navbar a:hover{
+    text-decoration: underline;
+}
+.footer-mid{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-mid h1{
+    font-size: 2.75rem;
+}
+.footer-mid p{
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.25rem;
     line-height: 143.1%;
-    /* or 20px */
-    width: 180px;
-    margin-top: 0.5rem;
+    /* or 34px */
+
     text-align: center;
 
     color: rgba(175, 188, 218, 0.62);
 
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.footerBar {
-    position: absolute;
-    top: -100%;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: -1;
+.copyright-text{
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 500;
+    font-size: .9rem;
+    line-height: 20px;
+    text-align: center;
+
+    color: rgba(175, 188, 218, 0.62);
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-@media screen and (max-width: 840px) {
-    .footer-info {
-        margin-right: 4rem;
-    }
+.footer-right a{
+    margin: 0 .3rem;
 }
-@media screen and (max-width: 768px) {
-    .Footer-Container {
-        padding: 1.5rem 0;
-    }
-    .Footer-Container .container {
-        flex-direction: column;
-    }
-    .footer-info {
-        margin: 1.5rem 0;
-    }
-    .Footer-Container a {
-        font-size: 15px;
-        line-height: 23px;
-        /* identical t  o box height */
-        margin-right: 25px;
-    }
-    .footer-info p {
-        font-size: 12px;
-        line-height: 143.1%;
-    }
-    .footerBar {
-        
-        top: -80%;
-        
-    }
+.footer-right a:hover{
+    opacity: .8;
 }

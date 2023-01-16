@@ -71,3 +71,19 @@ hamburger.addEventListener("click", () => {
 navCross.addEventListener("click", () => {
     mobileNav.style.display = "none";
 });
+
+// FAQ
+const FAQs = document.querySelectorAll('.faq-item');
+
+FAQs.forEach(faq=>{
+    faq.addEventListener('click',()=>{
+        console.log(faq.children[0])
+        if(faq.children[1].classList.contains('faq-inactive')){
+            faq.children[1].classList.remove('faq-inactive')
+            faq.children[0].children[1].classList.remove('faq-rotateArrow')
+        }else{
+            faq.children[1].classList.add('faq-inactive')
+            faq.children[0].children[1].classList.add('faq-rotateArrow')
+        }
+    })
+})
