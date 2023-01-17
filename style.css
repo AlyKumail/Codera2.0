@@ -961,7 +961,7 @@ input:focus{
         margin: 0.5rem auto;
         
     }
-    .code h2{
+    .code h2,.why h2{
         
         line-height: 41px;
         
@@ -992,7 +992,7 @@ input:focus{
         height: 180px;
     }
     .code-wrap1 p{
-        line-height: 17px;
+        line-height: 19px;
         font-size: 1.25rem;
     }
     
@@ -1172,7 +1172,7 @@ input:focus{
     .mb-small{
         display: block;
         margin: 0 auto;
-        padding: 0 10rem;
+        padding: 0 8rem;
     }
     .why-wrap1 img{
         display: inline-block;
