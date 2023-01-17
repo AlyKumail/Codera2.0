@@ -1166,7 +1166,7 @@ input:focus{
 }
 
 @media screen and (max-width:768px){
-    .whyProblem{
+    .mb-small{
         display: block;
         margin: 0 auto;
         padding: 0 10rem;
@@ -1180,6 +1180,50 @@ input:focus{
         width: 85%;
         line-height: 28px;
         
+    }
+    .why-wrap2 h3,
+    .why-wrap4 h3,
+    .why-wrap3 h3{
+        line-height: 43px;
+    }
+    .why-wrap2-para{
+        line-height: 29px !important;
+    }
+    .why-wrap2-content{
+        flex-direction: column;
+    }
+    .why-wrap2-content h3,
+    .why-wrap2-content img{
+        width: 100%;
+    }
+    .why-wrap3{
+        flex-direction: column;
+    
+    }
+    .why-wrap3-left,
+    .why-wrap3-right{
+        width: 100%;
+        min-height: 650px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .why-wrap3 p,
+    .why-wrap4 p{
+        line-height: 29px !important;
+
+    }
+    .why-wrap4-images img{
+        width: 100% ;
+    }
+    .img-line{
+        height: 180px;
+        width: 20px !important;
+        margin-left: 3rem;
+    }
+    .w-w-img3{
+        padding: 0 2.7rem;
     }
 }
 
@@ -1237,7 +1281,21 @@ input:focus{
 }
 
 @media screen and (max-width:768px){
+    .created-kids h2{
+        line-height: 55px;
+    }
+    .created-kids-item{
+        width: 100%;
+    }
+    .created-kids-item p{
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1.6rem;
+        line-height: 35px;
+        text-align: left;
     
+    }
 }
 
 /* ######## COMMUNITY #######*/
@@ -1356,6 +1414,51 @@ color: #FFFFFF;
 
 }
 
+@media screen and (max-width:768px){
+    .community h2{
+        
+        font-size: 2.3rem;
+        
+        margin-top: 1.5rem;
+    }
+    .community-wrap1{
+       flex-direction: column;
+    }
+   
+    .community-wrap1-left,
+    .community-wrap1-right,
+    .community-wrap3-right,
+    .community-wrap3-left{
+        width: 100%;
+    }
+    .community-wrap1 p,
+    .community-wrap3 p{
+        
+        font-size: 1.4rem;
+        line-height: 33px;
+    
+    
+    }
+    .community-wrap1 h3,
+    .community-wrap2 h3{
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1.65rem;
+        line-height: 33px;
+    }
+    .community-wrap2-left h2{
+        
+        font-size: 2.75rem;
+        line-height: 48px;
+    
+    }
+    .community-wrap3{
+       flex-direction: column;
+    }
+    
+}
+
 
 /* ######## STORIES #######*/
 .stories-img{
@@ -1462,6 +1565,30 @@ color: #FFFFFF;
     color: rgba(255, 255, 255, 0.8);
 }
 
+@media screen and (max-width:768px){
+    .stories h2{
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 2.95rem;
+        line-height: 45px;
+        margin: 2rem 0;
+        margin-bottom: .9rem;
+        color: #05D387;
+    
+    }
+    .stories-testimonial{
+        flex-direction: column;
+        gap: .25rem;
+
+    }
+    .testimonial-item{
+        
+    
+        margin-bottom: 1.5rem;
+    }
+}
+
 /* ######## CASE Study #######*/
 
 .caseStudy{
@@ -1535,6 +1662,34 @@ color: #FFFFFF;
     opacity: .7;
 }
 
+@media screen and (max-width:768px){
+    .caseStudy{
+        position: relative;
+        height: auto;
+        margin: 2rem 0;
+        max-height: 640px;
+        padding-bottom: 10rem;
+    }
+    .caseStudy-tag{
+        margin-bottom: 1rem;
+    }
+    .caseStudy  h2{
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 3.1rem;
+        line-height: 46px;
+        width: 80%;
+        color: #FFFFFF;
+    
+    }
+    .caseStudy-viewMore{
+       
+        bottom: 6%;
+        
+    }
+}
+
 
 
 /* ######## JOIN #######*/
@@ -1606,6 +1761,13 @@ color: #FFFFFF;
     
     color: #7C8CAE;
 }
+@media screen and (max-width: 768px){
+    .join-body .NavButtonsItem{
+      
+        margin-top: 3.85rem;
+       
+    }
+}
 
 /* ######## FAQ #######*/
 .faq h2{
@@ -1628,8 +1790,7 @@ color: #FFFFFF;
 .faq-body{
     width: 87%;
 }
-.faq-item{
-    
+.faq-item{ 
     padding: .8rem 1rem;
     /* border: 1px solid gray; */
     cursor: pointer;
@@ -1689,6 +1850,18 @@ color: #FFFFFF;
     to {opacity: 1}
 }
 
+@media screen and (max-width: 768px){
+    .faq-body{
+        width: 100%;
+    }
+    .faq h2{
+        
+        font-size: 2.8rem;
+        line-height: 50px;
+        
+    }
+}
+
 /* ######## Get Started #######*/
 .getStarted{
     display: flex;
@@ -1709,6 +1882,15 @@ color: #FFFFFF;
     line-height: 36px;
     margin-left: .5rem;
     color: #FFFFFF;
+}
+
+@media screen and (max-width: 768px){
+    .getStarted{
+        flex-direction: column-reverse;
+        padding-left: 2rem;
+        align-items: flex-start;
+        gap: 2rem;
+    }
 }
 
 
