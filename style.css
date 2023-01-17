@@ -31,7 +31,12 @@ body::-webkit-scrollbar-thumb {
     outline: 1px solid #3a4862;
     border-radius: 60px;
 }
-
+@media screen and (max-width: 960px) {
+    html{font-size: 88%;}
+}
+@media screen and (max-width: 768px) {
+    html{font-size: 68%;}
+}
 a {
     color: white;
     text-decoration: none;
@@ -640,13 +645,16 @@ img {
 .hero-form button{
     border: none;
 }
+.form-item{
+    display: flex;
+}
 .hero-form input{
     background: #FFFFFF;
     backdrop-filter: blur(32.5px);
     /* Note: backdrop-filter has minimal browser support */
     border-radius: 5px 0px 0px 5px;
     padding: .9rem 1.3em;
-    width: 25.5%;
+    /* width: 25.5%; */
     max-width: 380px;
     font-family: 'Poppins';
     font-size: 1rem;
@@ -710,7 +718,24 @@ input:focus{
 }
 
 @media screen and (max-width:768px){
-    
+    .hero h2{
+        
+        font-size: 4.5rem;
+        line-height: 117.5%;
+       
+    }
+    .hero p{
+       
+        font-size: 1.5rem;
+        line-height: 40px;
+        
+    }
+    .hero-form{
+        flex-direction: column;
+    }
+    .form-item{
+        margin-bottom: 1.5rem;
+    }
 }
 
 
@@ -726,22 +751,23 @@ input:focus{
     background: rgba(0, 0, 0, 0.17);
     border-radius: 16px;    
     padding: 2.2rem 2rem;
+    flex-wrap: wrap;
   
 }
 .stats h3{
     font-family: 'Space Grotesk';
     font-style: normal;
     font-weight: 500;
-    font-size: 22px;
+    font-size: 1.55rem;
     line-height: 28px;
-
+    margin: .2rem;
     color: #FFFFFF;
 }
 .stats p{
     font-family: 'Space Grotesk';
     font-style: normal;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 20px;
 
     background: linear-gradient(0deg, rgba(175, 188, 218, 0.62), rgba(175, 188, 218, 0.62));
@@ -751,6 +777,12 @@ input:focus{
     text-fill-color: transparent;
 }
 
+@media screen and (max-width:768px){
+    .stats{
+        width: 100%;
+        margin: 4rem auto;
+    }
+}
 
 /* ######## COMFORTABLE #######*/
 .comfortable-container{
@@ -774,6 +806,12 @@ input:focus{
     margin-bottom: 1.5rem;
 }
 
+@media screen and (max-width:768px){
+    .comfortable .mid{
+        margin: 0 0rem;
+
+    }
+}
 
 /* ######## CODE #######*/
 .blue{
@@ -922,6 +960,52 @@ input:focus{
         width: 100%;
         margin: 0.5rem auto;
         
+    }
+    .code h2{
+        
+        line-height: 55px;
+        
+    }
+    .code-wrap1-left,
+    .code-wrap1-right{
+       
+        min-height: auto;
+        padding-bottom: 5.5rem;
+    }
+    .code-wrap1-right .graphImg{
+        width: 100%;
+    }
+    .code-wrap1 h3, .code-wrap2 h3 {
+        
+        font-size: 1.5rem;
+        line-height: 26px;
+        margin-bottom: .7rem;
+      }
+      .quote{
+        width: 100%;
+      }
+      .billgate{
+        left: auto;
+        right: 0 !important;
+        height: 185px;
+    }
+    
+    .code-wrap3 h3{
+        width: 100%;
+        margin: 0 auto;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1.7rem;
+        padding: 0rem 1.35rem;
+        line-height: 42px;
+        margin-bottom: 4rem;
+        color: #FFFFFF;
+    }
+    .code-wrap3 img{
+        display: block;
+        width: 100%;
+        margin: 0 auto;
     }
 }
 
@@ -1081,6 +1165,23 @@ input:focus{
     color: #ED3C51;
 }
 
+@media screen and (max-width:768px){
+    .whyProblem{
+        display: block;
+        margin: 0 auto;
+        padding: 0 10rem;
+    }
+    .why-wrap1 img{
+        display: inline-block;
+        width: 30px !important;
+        margin-top: 9px;
+    }
+    .why-wrap1 p{
+        width: 85%;
+        line-height: 28px;
+        
+    }
+}
 
 /* ######## CREATED #######*/
 .created-img{
@@ -1133,6 +1234,10 @@ input:focus{
     line-height: 42px;
     text-align: left;
 
+}
+
+@media screen and (max-width:768px){
+    
 }
 
 /* ######## COMMUNITY #######*/
