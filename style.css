@@ -1968,3 +1968,206 @@ ul{
 .footer-right a:hover{
     opacity: .8;
 }
+
+
+/* ######## DASHBOARD #######*/
+.portal-container{
+    width: 97%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.dashboard{
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+    padding: .75rem 0;
+}
+.sidebar{
+    /* border: 1px solid green; */
+    width: 7%;
+    max-width: 100px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 96vh;
+}
+.sidebar::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #64ACFF;
+    opacity: 0.06;
+    border-radius: 19px;
+    z-index: -1;
+}
+.main{
+    /* border: 1px solid orange; */
+    width: 92%;
+}
+.gray-line{
+    width: 75%;
+    height: 2px;
+    background: #172336;
+    margin-bottom: 2.35rem;
+    margin-top: 1rem;
+}
+.menu-icon{
+    margin: 1.2rem 0;
+    cursor: pointer;
+    padding: 1rem;
+    border-radius: 10px;
+    transition: all 0.25s ease-in;
+
+}
+.sidebar-active-btn {
+    border-image: url("./images/blueGrad-sidebar.png") 5;
+    border-width: 2px;
+    border-style: solid;
+}
+
+.menu-icon:hover{
+    opacity: .65;
+}
+.sidebar-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logout{
+    display: inline-block;
+    padding: 1rem;
+}
+
+
+/* ######## MAIN HEADER #######*/
+.main-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-header-navbar{
+    background: linear-gradient(128.9deg, rgba(162, 250, 207, 0.1) 1.86%, rgba(100, 172, 255, 0.1) 89.97%);
+    backdrop-filter: blur(25px);
+    /* Note: backdrop-filter has minimal browser support */
+    padding: .8rem 1rem;
+    border-radius: 10px;
+}
+.main-header-navbar a{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: .85rem;
+    line-height: 24px;
+    /* identical to box height */
+
+    letter-spacing: 0.04em;
+    margin: 0 .5rem;
+    color: #EFEFEF;
+    padding: .5em .9em;
+
+}
+.main-navbar-active{
+    background: linear-gradient(128.9deg, rgba(162, 250, 207, 0.1) 1.86%, rgba(100, 172, 255, 0.1) 89.97%);
+    backdrop-filter: blur(25px);
+    /* Note: backdrop-filter has minimal browser support */
+    padding: .5em .9em;
+    border-radius: 10px;
+}
+.main-header .NavButtonsItem{
+    font-size: .85rem;
+    padding: .8em 1.3em !important;
+    margin-right: 1.25rem;
+}
+
+.main-header-points{
+    display: flex;
+    align-items: center;
+}
+.user-points,.point{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+.point{
+    color: white;
+    padding: .8em 1.5em !important;
+
+    background: #0E1928;
+    border-radius: 15px;
+}
+
+
+/* ######## MAIN BODY #######*/
+.main-body{
+    border: 1px solid hotpink;
+    margin-top: 1rem;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    gap: 1.75rem;
+}
+.main-body-left{
+    width: 45%;
+    border: 1px solid blue;
+}
+.main-body-right{
+    width: 55%;
+    border: 1px solid red;
+
+}
+.main-body h1{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.05rem;
+    /* line-height: 54px; */
+
+    color: #FFFFFF;
+}
+
+/* USER INFORMATION */
+.user-information{
+    padding-left: 2rem;
+}
+.user-information-plans{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.flex-center{
+    display: flex;
+    align-items: center;
+}
+.user-information-plans{
+    gap: 1rem;
+}
+.user-information-plans div{
+    gap: .25rem;
+    background: linear-gradient(90deg, rgba(162, 250, 207, 0.04) 0%, rgba(100, 172, 255, 0.04) 101.4%);
+    border: 1px solid rgba(175, 188, 218, 0.28);
+    border-radius: 20px;
+    padding: .4em .7em;
+}
+.user-information-plans div p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: .75rem;
+    line-height: 21px;
+
+    color: #FFFFFF;
+}
+
+/* USER PROGRESS */
+.user-progress{
+    background: linear-gradient(128.9deg, rgba(162, 250, 207, 0.04) 1.86%, rgba(100, 172, 255, 0.04) 89.97%);
+    backdrop-filter: blur(25px);
+    /* Note: backdrop-filter has minimal browser support */
+
+    border-radius: 50px;
+}
