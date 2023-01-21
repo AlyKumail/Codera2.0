@@ -2104,7 +2104,7 @@ ul{
 
 /* ######## MAIN BODY #######*/
 .main-body{
-    border: 1px solid hotpink;
+    /* border: 1px solid hotpink; */
     margin-top: 1rem;
     color: white;
     display: flex;
@@ -2113,11 +2113,11 @@ ul{
 }
 .main-body-left{
     width: 45%;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
 }
 .main-body-right{
     width: 55%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 
 }
 .main-body h1{
@@ -2164,10 +2164,210 @@ ul{
 }
 
 /* USER PROGRESS */
-.user-progress{
+.user-progress-status{
+    
+    /* Note: backdrop-filter has minimal browser support */
+    padding: .55rem 1.4rem;
+    border-radius: 50px;
+    margin-top: 1.2rem;
+    border: 1px solid #A9B9DD;
+    padding-bottom: 7rem;
+    position: relative;
+}
+.user-progress-status::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
     background: linear-gradient(128.9deg, rgba(162, 250, 207, 0.04) 1.86%, rgba(100, 172, 255, 0.04) 89.97%);
     backdrop-filter: blur(25px);
-    /* Note: backdrop-filter has minimal browser support */
-
+    z-index: -1;
     border-radius: 50px;
+
+}
+.user-progress{
+    margin-bottom: 1.5rem;
+}
+.user-progress-header h3{
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.2rem;
+    line-height: 51px;
+
+    color: rgba(255, 255, 255, 0.1);
+}
+.user-progress-header h2{
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 31px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-align: center;
+    width: 80%;
+    color: rgba(255, 255, 255, 0.22);
+}
+
+.user-progress-bar p{
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 700;
+    font-size: .8rem;
+    line-height: 15px;
+    color: rgba(255, 255, 255, 0.3);
+    width: 8%;
+}
+.user-progress-bar .bar{
+    background: #263148;
+    border-radius: 9px;
+    width: 92%;
+    height: 9px;
+    position: relative;
+}
+.fill{
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(90deg, #34D399 0%, #34D3AD 101.4%);
+    position: absolute;
+    top: 0;
+    border-radius: 9px;
+
+}
+
+.user-levels{
+    /* border: 1px solid red; */
+    height: 310px;
+    overflow: hidden;
+    overflow-y: scroll;
+
+    scrollbar-color: #43557e;
+    scrollbar-width: thin;
+    padding-right: .6rem;
+}
+.user-levels::-webkit-scrollbar {
+    width: 0.25em;
+}
+
+.user-levels::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+}
+
+.user-levels::-webkit-scrollbar-thumb {
+    background-color: #43557e;
+    /* outline: 1px solid #3a4862; */
+    border-radius: 60px;
+}
+
+.level{
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(157, 173, 210, 0.15);
+    backdrop-filter: blur(8px);
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 7px;
+    justify-content: space-between;
+    padding: .65rem 1rem;
+    margin: .6rem 0;
+}
+.level-icons{
+    gap: .75rem;
+}
+.level-text p {
+    font-family: 'Courier';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 23px;
+    /* identical to box height */
+
+
+}
+.level-completed p{
+    color: rgba(52, 211, 153, 0.7);
+}
+.level-completed span{
+    color: rgba(51, 196, 144, 0.2);
+    font-family: 'Space Grotesk';
+    font-weight: 700;
+}
+.level-current p{
+    color: rgba(255, 255, 255, 0.8);
+}
+.level-current span{
+    color: rgba(255, 255, 255, 0.8);
+    font-family: 'Space Grotesk';
+    font-weight: 700;
+
+}
+.level-uncompleted p{
+    color: rgba(255, 255, 255, 0.13);
+
+}
+
+.chapters-completed-container{
+    padding: 0 1.2rem;
+}
+.chapter{
+    background: linear-gradient(260.55deg, rgba(25, 114, 153, 0.2) -0.75%, rgba(64, 120, 64, 0.2) 96.83%);
+    border-radius: 7px;
+    padding: .5rem .8rem;
+    padding-right: 1.15rem;
+}
+.chapters-completed{
+    margin-top: .85rem;
+}
+.chapters-completed h3{
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.1rem;
+    line-height: 26px;
+    margin-bottom: .8rem;
+    color: #FFFFFF;
+}
+.chapter-text{
+    width: 80%;
+    margin-left: 1rem;
+    justify-content: space-between;
+}
+.chapter-text-status p{
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 500;
+    font-size: .8rem;
+    line-height: 18px;
+    /* identical to box height */
+    background: rgba(48, 225, 185, 0.27);
+    border-radius: 7px;
+    padding: .4em 1em;
+
+    color: rgba(48, 225, 185, 0.85);
+}
+.chapter-text-info h4{
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.1rem;
+    line-height: 26px;
+
+    color: #FFFFFF;
+}
+.white-txt{
+    color: white;
+}
+.chapter-text-info p{
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 500;
+    font-size: .8rem;
+    line-height: 18px;
+    /* identical to box height */
+
+
+    color: #848484;
+
 }
