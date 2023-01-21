@@ -2167,11 +2167,11 @@ ul{
 .user-progress-status{
     
     /* Note: backdrop-filter has minimal browser support */
-    padding: .55rem 1.4rem;
+    padding: .65rem 1.4rem;
     border-radius: 50px;
     margin-top: 1.2rem;
     border: 1px solid #A9B9DD;
-    padding-bottom: 7rem;
+    /* padding-bottom: 7rem; */
     position: relative;
 }
 .user-progress-status::after{
@@ -2189,6 +2189,10 @@ ul{
 }
 .user-progress{
     margin-bottom: 1.5rem;
+}
+.user-progress-header,
+.user-progress-bar{
+    margin-left: 5px;
 }
 .user-progress-header h3{
     font-family: 'Space Grotesk';
@@ -2241,14 +2245,17 @@ ul{
 
 .user-levels{
     /* border: 1px solid red; */
-    height: 310px;
+    height: 350px;
     overflow: hidden;
     overflow-y: scroll;
-
+    /* box-shadow: inset 0px -18px 20px 0px #040912; */
     scrollbar-color: #43557e;
     scrollbar-width: thin;
     padding-right: .6rem;
+    position: relative;
+    z-index: 2;
 }
+
 .user-levels::-webkit-scrollbar {
     width: 0.25em;
 }
@@ -2262,6 +2269,17 @@ ul{
     /* outline: 1px solid #3a4862; */
     border-radius: 60px;
 }
+.earth{
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    /* width: 80%; */
+    /* height: 98%; */
+    z-index: 0;
+}
 
 .level{
     background: rgba(255, 255, 255, 0.06);
@@ -2270,8 +2288,10 @@ ul{
     /* Note: backdrop-filter has minimal browser support */
     border-radius: 7px;
     justify-content: space-between;
-    padding: .65rem 1rem;
+    padding: .75rem 1rem;
     margin: .6rem 0;
+    z-index: 2;
+    
 }
 .level-icons{
     gap: .75rem;
@@ -2310,12 +2330,31 @@ ul{
 
 .chapters-completed-container{
     padding: 0 1.2rem;
+    height: 250px;
+    /* border: 1px solid red; */
+    overflow: hidden;
+    overflow-y: scroll;
 }
+.chapters-completed-container::-webkit-scrollbar {
+    width: 0.25em;
+}
+
+.chapters-completed-container::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+}
+
+.chapters-completed-container::-webkit-scrollbar-thumb {
+    background-color: #43557e;
+    /* outline: 1px solid #3a4862; */
+    border-radius: 60px;
+}
+
 .chapter{
     background: linear-gradient(260.55deg, rgba(25, 114, 153, 0.2) -0.75%, rgba(64, 120, 64, 0.2) 96.83%);
     border-radius: 7px;
     padding: .5rem .8rem;
     padding-right: 1.15rem;
+    margin: .7rem 0;
 }
 .chapters-completed{
     margin-top: .85rem;
@@ -2370,4 +2409,225 @@ ul{
 
     color: #848484;
 
+}
+
+/*########### MAIN - RIGHT########### */
+
+
+.user-data__body {
+    /* border: 1px solid red; */
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 1rem;
+}
+.user-data__body__info {
+    width: 100%;
+    /* border: 1px solid blue; */
+}
+.user-data__body__info h4 {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 100%;
+    /* or 16px */
+
+    color: rgba(255, 255, 255, 0.17);
+}
+.flex-start-center {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.flex-start-start {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.user-progress-bar2 {
+    width: 100%;
+    margin-right: 5px;
+}
+.progress-track {
+    background: rgba(255, 255, 255, 0.14);
+    border-radius: 24px;
+    width: 100%;
+    height: 9px;
+    position: relative;
+}
+.progress-fill {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: 40%;
+    height: 9px;
+    background: linear-gradient(
+        208.31deg,
+        rgba(201, 142, 84, 0.85) 2.41%,
+        rgba(172, 97, 67, 0.85) 96.93%
+    );
+    border-radius: 40px;
+}
+.user-progress-bar2 p {
+    font-family: "Space Grotesk";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 9.5px;
+    line-height: 100%;
+    /* identical to box height, or 8px */
+    width: 100%;
+    /* border:1px solid red; */
+    text-align: right;
+    margin-top: 5px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.main-body-right{
+    padding-top: 1rem;
+}
+.main-body-right-row{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    gap: 1.35rem;
+    margin-top: 1.5rem;
+}
+.main-body-right-row .row-left,
+.main-body-right-row .row-right{
+    width: 50%;
+    border: 1px solid white;
+    background: linear-gradient(307.44deg, rgba(162, 250, 207, 0.04) -1.37%, rgba(100, 172, 255, 0.04) 89.09%);
+    backdrop-filter: blur(25px);
+    /* Note: backdrop-filter has minimal browser support */
+    padding: 1.8rem 1rem;
+    border-radius: 50px;
+}
+.main-body-right-row .wood{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.main-body-right-row .wood h2{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 1.5rem;
+    line-height: 100%;
+    margin-bottom: 1rem;
+    background: linear-gradient(208.31deg, rgba(201, 142, 84, 0.6) 2.41%, rgba(172, 97, 67, 0.6) 96.93%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+/* ## PROGRESS ##*/
+.flex{
+    display: flex;
+}
+.progress-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.progress-month {
+    padding: 0.5rem 0.8rem;
+    background: rgba(67, 85, 126, 0.19);
+    border-radius: 10px;
+    margin-left: 1rem;
+
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 500;
+    font-size: .75rem;
+    line-height: 18px;
+
+    color: #FFFFFF;
+}
+.progress-body {
+    
+}
+.progress-body-wrap {
+    display: flex;
+    width: auto;
+    /* border: 1px solid rgb(99, 89, 89); */
+    margin: 0 auto;
+    flex-wrap: wrap;
+    margin-top: 0.75rem;
+    gap: .26rem;
+}
+.progress-body p {
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 500;
+    font-size: .9rem;
+    line-height: 20px;
+    /* flex: auto;   */
+    color: #FFFFFF;
+
+    border: 2px solid rgba(67, 85, 126, 0.3);
+    border-radius: 10px;
+    padding: 0.3rem 0;
+    width: 13%;
+    text-align: center;
+    margin: 0 auto;
+    /* margin: 0.3rem; */
+}
+.progress-completed {
+    background: url("./images/fire-solid.svg") no-repeat center center;
+}
+.progress-current {
+    border: 3px solid #00d2d2 !important;
+}
+.progress-header h2{
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.1rem;
+    /* line-height: 26px;    */
+    /* identical to box height */
+
+    letter-spacing: 0.04em;
+
+    color: rgba(255, 255, 255, 0.33);
+}
+
+/* Badges */
+.flex-between-center{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.badges-header h3{
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 700;
+    font-size: .9rem;
+    line-height: 20px;
+    letter-spacing: 0.04em;
+
+    color: rgba(255, 255, 255, 0.33);
+}
+.badges-header p{
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 700;
+    font-size: .7rem;
+    line-height: 15px;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.54);
+    /* padding: 1rem; */
+}
+.badges-row .row-left,
+.badges-row .row-right{
+    background: linear-gradient(128.9deg, rgba(162, 250, 207, 0.04) 1.86%, rgba(100, 172, 255, 0.04) 89.97%);
+    backdrop-filter: blur(25px);
+    /* Note: backdrop-filter has minimal browser support */
+    padding: .75rem 1.1rem;
+    border-radius: 18px;
+}
+.badges-body{
+    margin-top: .5rem;
 }
