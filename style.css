@@ -2003,6 +2003,7 @@ ul{
     align-items: center;
     min-height: 96vh;
     padding: 0.75rem .5rem;
+    /* z-index: 99 !important; */
 }
 .sidebar::after{
     content: '';
@@ -2873,10 +2874,158 @@ ul{
     margin-bottom: .5rem;
 }
 
+/*######### AVATAR #########*/
+.avatar-container{
+    position: relative;
+    background: linear-gradient(121.63deg, #081020 21.35%, #260B04 79.19%);
+    /* background: url('./images/avatar-bg.png') no-repeat center center/cover; */
 
+    z-index: 0;
+}
+.avatar-container::after{
+    content: '';
+    
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: url('./images/avatar-bg.png') no-repeat center center/cover;
+    /* background: linear-gradient(121.63deg, #081020 21.35%, #260B04 79.19%); */
 
+    z-index: -1 !important;
+}
+.avatar .main-body-left{
+    /* border: 1px solid green; */
+    width: 38%;
+    padding-left: .75rem;
+    padding-right: 2.2rem;
+    margin-top: 1.5rem;
+}
+.avatar .main-body-right{
+    border: 1px solid red;
+    width: 72%;
 
+}
+.avatar-profile-header h3{
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.7rem;
+    line-height: 61px;
+    letter-spacing: 0.04em;
+    margin-left: .8rem;
+    color: #CF4521;
 
+}
+.avatar-rank{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+}
+.avatar-rank h3{
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.2rem;
+    line-height: 30px;
+    /* identical to box height */
+
+    letter-spacing: 0.04em;
+    /* border: 1px solid red; */
+   
+    color: #EF532B;
+}
+.avatar-rank p{
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 20px;
+    letter-spacing: 0.04em;
+    margin-bottom: 1px;
+    color: #EF532B;
+}
+.gray-txt{
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.skills-abilities{
+    margin-top: 1.1rem;
+}
+.skills-abilities h4{
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 36px;
+    /* identical to box height */
+
+    letter-spacing: 0.06em;
+
+    color: #CF4521;
+}
+.skills-abilities p{
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: .85rem;
+    line-height: 22px;
+
+    color: #2F2837;
+}
+.abilities-wrap{
+    background: rgba(0, 0, 0, 0.28);
+    border-radius: 17px;
+    display: flex;
+    align-items: center;
+    padding: .75rem .9rem;
+    margin-top: .5rem;
+}
+.avatarBar{
+    height: 12px;
+    width: 100%;
+    margin-top: .4rem;
+    background: rgba(99, 111, 136, 0.29);
+    position: relative;
+    overflow: hidden;
+
+}
+.avatarFill{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25%;
+    height: 100%;
+    background: #EF532B;
+    overflow: hidden;
+
+}
+.avatarFillTri{
+    position: absolute;
+    height: 100%;
+    bottom: 0;
+    right: 0;
+    width: 10px;
+    overflow: hidden;
+    border-bottom: 15px solid #26293F;
+    border-left: 15px solid transparent;
+}
+.avatarFillTriMain{
+    position: absolute;
+    height: 100%;
+    bottom: 0;
+    right: 0;
+    width: 10px;
+    overflow: hidden;
+    border-bottom: 15px solid #110b1de5;
+    border-left: 15px solid transparent;
+}
+.avatar-char{
+    margin-top: 2rem;
+}
+/* 110B1D */
 
 
 

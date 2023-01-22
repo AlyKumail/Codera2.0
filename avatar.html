@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap"
+            rel="stylesheet"
+        />
+        <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"> 
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <title>Dashboard - Codera App</title>
+    </head>
+    <body>
+        <!-- Sidebar -->
+        <div class="avatar-container">
+            <div class="portal-container dashboard avatar">
+                <div id="mobileNavPortal" class="mobileNav">
+                    <img
+                        id="navCrossPortal"
+                        class="navCross"
+                        src="./images/navCross.png"
+                        alt=""
+                    />
+                    <div class="logo">
+                        <img class="logoImg" src="./images/logo.png" alt="" />
+                        <h1 class="header">COD<span class="blueGradient">ERA</span></h1>
+                    </div>
+                    <div>
+                        <ul class="NavLinks">
+                            <div class="sidebar-menu">
+                                <div class="gray-line"></div>
+                                <img class="menu-icon sidebar-active-btn" src="./images/home.png" alt="">
+                                <img class="menu-icon" src="./images/bag.png" alt="">
+                                <img class="menu-icon" src="./images/code.png" alt="">
+                                <img class="menu-icon" src="./images/trophy.png" alt="">
+                                <div class="gray-line"></div>
+                            </div>
+                            <img class="menu-icon logout" src="./images/logout.png" alt="">
+                        </ul>
+                    </div>
+                    
+                </div>
+                <img
+                    class="hamburger"
+                    id="hamburgerPortal"
+                    src="./images/hamburger.png"
+                    alt=""
+                />
+                <div class="sidebar">
+                    <img src="./images/logo-dashboard.svg" alt="">
+                    <div class="sidebar-menu">
+                        <div class="gray-line"></div>
+                        <img class="menu-icon sidebar-active-btn" src="./images/home.png" alt="">
+                        <img class="menu-icon" src="./images/bag.png" alt="">
+                        <img class="menu-icon" src="./images/code.png" alt="">
+                        <img class="menu-icon" src="./images/trophy.png" alt="">
+                        <div class="gray-line"></div>
+                    </div>
+                    <img class="menu-icon logout" src="./images/logout.png" alt="">
+                </div>
+                <div class="main">
+                    <div class="main-header">
+                        <div class="main-header-navbar">
+                            <a  href="dashboard.html">DASHBOARD</a>
+                            <a class="main-navbar-active" href="#">AVATAR</a>
+                            <a href="#">MULTIPLAYER</a>
+                            <a href="#">AFFILIATE</a>
+                        </div>
+                        <div class="main-header-points">
+                            <a
+                            class="NavButtonsItem NavButtonsItemBordered"
+                            href="#"
+                            >
+                                UPGRADE
+                            </a>
+                            <div class="user-points">
+                                <div class="point"><img src="./images/medal.png" alt=""><p>5</p></div>
+                                <div class="point"><img src="./images/fire.png" alt=""><p>5</p></div>
+                                <div class="point"><img src="./images/crystal.png" alt=""><p>5</p></div>
+                            </div>
+                        
+                        </div>
+                    </div>
+                    <div class="main-body">
+                        <div class="main-body-left">
+                            <div class="avatar-profile">
+                                <div class="avatar-profile-header flex-center">
+                                    <img src="./images/avatar-profile.png" alt="">
+                                    <h3>FIRE KNIGHT</h3>
+                                </div>
+                                <div class="avatar-rank-container">
+                                    <div class="avatar-rank">
+                                        <h3>RANK 1</h3>
+                                        <p>1<span class="gray-txt">/10</span></p>
+                                    </div>
+                                    <div class="avatarBar"><span class="avatarFill"><span class="avatarFillTri"></span></span><span class="avatarFillTriMain"></span></div>
+ 
+                                </div> 
+                                <div class="skills-abilities">
+                                    <h4>SKILLS</h4>
+                                    <p>ABILITIES</p>
+                                    <div class="abilities-wrap">
+                                        <img src="./images/abilities1.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <img class="avatar-char" src="./images/avatar-character.png" alt="">
+
+                        </div>
+                        <div class="main-body-right"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="./portalScript.js"></script>
+    </body>
+</html>
