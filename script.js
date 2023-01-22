@@ -72,6 +72,9 @@ navCross.addEventListener("click", () => {
     mobileNav.style.display = "none";
 });
 
+
+
+
 // FAQ
 const FAQs = document.querySelectorAll('.faq-item');
 
