@@ -2903,7 +2903,7 @@ ul{
     margin-top: 1.5rem;
 }
 .avatar .main-body-right{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 72%;
 
 }
@@ -3028,6 +3028,149 @@ ul{
 /* 110B1D */
 
 
+.avatar-info{
+    background: rgba(0, 0, 0, 0.28);
+    border-radius: 17px;
+    padding: 1.35rem 1.75rem;
+}
+.avatar-info-header{
+    gap: 1.25rem;
+}
+.avatar-info-header h4{
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 500;
+    font-size: .9rem;
+    line-height: 20px;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.25);
+}
+.avatar-info-current{
+    color: white !important;
+}
+
+.avatar-info-stats{
+    display: flex;
+    justify-content: space-between;
+    gap: 1.85rem;
+    display: none;
+}
+.avatar-info-stats-left{
+    width: 60%;
+}
+.avatar-info-stats-right{
+    width: 40%;
+
+}
+.avatar-info-stats-item h3{
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 500;
+    font-size: .9rem;
+    line-height: 20px;
+
+    color: rgba(255, 255, 255, 0.81);
+}
+.avatar-info-stats-item p{
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 500;
+    font-size: .9rem;
+    line-height: 20px;
+    text-align: right;
+
+    color: rgba(255, 255, 255, 0.81);
+
+}
+.avatar-info-stats-item .avatarFill{
+    background: linear-gradient(270deg, rgba(207, 69, 33, 0.8) 0%, rgba(207, 0, 0, 0.8) 100%);
+}
+.avatar-info-stats-item .avatarFillTri{
+    border-bottom: 15px solid #2b2835;
+
+}
+.avatar-info-stats-item .avatarFillTriMain{
+    border-bottom: 15px solid #1E0B0B;
+
+}
+.avatar-info-stats-item .avatar-rank{
+    margin-top: 0rem;
+}
+.avatar-info-stats-item{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* border: 1px solid red; */
+        margin: .75rem 0;
+}
+.avatar-stats-icon{
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    gap: .35rem;
+}
+.avatar-stats-icon img{
+    cursor: pointer;
+}
+.avatar-stats-data{
+    width: 80%;
+}
+.avatar-info-stats-right h3{
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.15rem;
+    line-height: 26px;
+    /* identical to box height */
 
 
+    color: rgba(255, 255, 255, 0.56);
+
+}
+.avatar-info-stats-right p{
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 400;
+    font-size: .9rem;
+    line-height: 20px;
+
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.avatar-info-items{
+    display: none;
+    margin-top: 2rem;
+}
+.avatar-info-items-item{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.avatar-info-items-item h4{
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 500;
+    font-size: .9rem;
+    line-height: 20px    ;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: .3rem;
+    margin-bottom: .15rem;
+}
+.avatar-info-items-item p{
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    width: 80%;
+    color: rgba(255, 255, 255, 0.5);
+
+}
+.avatarShow{
+    display: flex;
+}
 
