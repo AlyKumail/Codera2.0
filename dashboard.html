@@ -16,6 +16,7 @@
             rel="stylesheet"
         />
         <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet"> 
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
         <title>Dashboard - Codera App</title>
     </head>
     <body>
@@ -118,7 +119,7 @@
                                     </div>
                                     <div class="level-icons flex-center">
                                         <img src="./images/play.png" alt="">
-                                        <img src="./images/level-unactive-diamond.png" alt="">
+                                        <img src="./images/level-active-diamond.png" alt="">
                                         <span>5</span>
                                     </div>
                                 </div>
@@ -279,13 +280,153 @@
                                 </div>
                             </div>
                             <div class="row-right">
+                                <div class="acheivement-header flex-between-center">
+                                    <h3>ACHEIVEMENTS</h3>
+                                    <p>VIEW ALL</p>
+                                </div>
+                                <div class="acheivement-body">
+                                    <div class="acheivement flex-center">
+                                        <h4>01</h4>
+                                        <div class="acheivement-text">
+                                            <h2>Welcome to Codera!</h2>
+                                            <p>Joined Codera On Today's Date!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
+                        <div class="userStats-container">
+                            <div class="userStats">
+                                <div class="userStats-left">
+                                    <div class="learning-time">
+                                        <h4>Learning Time</h4>
+                                        <p>Total time: <span class="white-txt">5h 45m</span> </p>
+                    
+                                        <canvas width="600" height="250" class="chart" id="myChart"></canvas>
+                                    </div>
+                                </div>
+                                <div class="userStats-right">
+                                    <div class="diamonds">
+                                        <div class="diamonds-head">
+                                            <h4>DIAMONDS</h4>
+                                            <div class="diamonds-head-number">
+                                                <h3>15</h3>
+                                                <img src="./images/arrowUp.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="diamonds-body flex-between-center">
+                                            <p>Yesterday: <span class="white-txt">+5</span></p>
+                                            <p>Last week: <span class="white-txt">+35</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="userStats-right-row">
+                                        <div class="medals">
+                                            <div class="medals-head">
+                                                <h4>MEDALS</h4>
+                                                <div class="medals-head-number">
+                                                    <h3>15</h3>
+                                                    <img src="./images/arrowUp.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="medals-body">
+                                                <p>Yesterday: <span class="white-txt">+5</span></p>
+                                                <p>Last week: <span class="white-txt">+35</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="streak">
+                                            <div class="streak-head">
+                                                <h4>LONGEST STREAK</h4>
+                                                <div class="streak-head-number">
+                                                    <h3>15</h3>
+                                                    <img src="./images/streak-fire.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <script>
+            const ctx = document.getElementById("myChart");
+
+            // <block:setup:1>
+            const DATA_COUNT = 12;
+            const labels = [
+                "Jan",
+                "Feb",
+                "Mar",
+                "Apr",
+                "May",
+                "Jun",
+                "Jul",
+                "Aug",
+                "Sep",
+                "Oct",
+                "Nov",
+                "Dec",
+            ];
+            // for (let i = 0; i < DATA_COUNT; i++) {
+            //     labels.push(i.toString());
+            // }
+            const datapoints = [
+                0, 20, 20, 60, 60, 120, 140, 180, 120, 125, 105, 110, 70,
+            ];
+            const data = {
+                labels: labels,
+                datasets: [
+                    {
+                        label: "Learning Time",
+                        data: datapoints,
+                        // borderColor: red,
+                        fill: false,
+                        cubicInterpolationMode: "monotone",
+                        tension: 0.4,
+                    },
+                ],
+            };
+
+            new Chart(ctx, {
+                type: "line",
+                data: data,
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+
+                    plugins: {
+                        title: {
+                            display: true,
+                            text: "Total Time: 5h 45m",
+                        },
+                    },
+                    interaction: {
+                        intersect: false,
+                    },
+                    scales: {
+                        x: {
+                            display: true,
+                            title: {
+                                display: true,
+                            },
+                        },
+                        y: {
+                            display: true,
+                            title: {
+                                display: true,
+                                text: "Hours",
+                            },
+                            suggestedMin: 0,
+                            suggestedMax: 200,
+                        },
+                    },
+                },
+            });
+        </script>
+        <!-- <script src="./dashboardScript.js"></script> -->
         <script src="./script.js"></script>
     </body>
 </html>

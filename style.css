@@ -1992,6 +1992,7 @@ ul{
     justify-content: flex-start;
     align-items: center;
     min-height: 96vh;
+    padding: 0.75rem .5rem;
 }
 .sidebar::after{
     content: '';
@@ -2112,11 +2113,11 @@ ul{
     gap: 1.75rem;
 }
 .main-body-left{
-    width: 45%;
+    width: 44%;
     /* border: 1px solid blue; */
 }
 .main-body-right{
-    width: 55%;
+    width: 56%;
     /* border: 1px solid red; */
 
 }
@@ -2128,6 +2129,24 @@ ul{
     /* line-height: 54px; */
 
     color: #FFFFFF;
+}
+
+@media screen and (max-width: 1080px){
+    .main-body{
+        flex-direction: column;
+    }
+    .main-body-left{
+        width: 75%;
+        margin: 0 auto;
+        /* border: 1px solid blue; */
+    }
+    .main-body-right{
+        width: 80%;
+        margin: 0 auto;
+
+        /* border: 1px solid red; */
+    
+    }
 }
 
 /* USER INFORMATION */
@@ -2595,12 +2614,17 @@ ul{
 }
 
 /* Badges */
+
 .flex-between-center{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.badges-header h3{
+.badges-row{
+    align-items: flex-start;
+}
+.badges-header h3,
+.acheivement-header h3{
     font-family: 'Space Grotesk';
     font-style: normal;
     font-weight: 700;
@@ -2610,7 +2634,8 @@ ul{
 
     color: rgba(255, 255, 255, 0.33);
 }
-.badges-header p{
+.badges-header p,
+.acheivement-header p{
     font-family: 'Space Grotesk';
     font-style: normal;
     font-weight: 700;
@@ -2631,3 +2656,190 @@ ul{
 .badges-body{
     margin-top: .5rem;
 }
+.badges-body img{
+    width:18%;
+    max-width: 100% !important;
+}
+.acheivement{
+    background: #081020;
+    border: 1px solid rgba(15, 202, 155, 0.54);
+    border-radius: 5px;
+    padding: .35rem 1rem;
+    margin: .5rem 0;
+}
+.acheivement h4{
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 46px;
+    margin-right: 1rem;
+    color: rgba(52, 211, 153, 0.35);
+
+}
+.acheivement h2{
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 700;
+    font-size: .9rem;
+    line-height: 19px;
+
+    color: #34D399;
+}
+.acheivement p{
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 13px;
+
+    color: rgba(255, 255, 255, 0.66);
+}
+
+/* Stats */
+.userStats{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    /* flex-direction: column; */
+    gap: 1rem;
+    background: linear-gradient(274.36deg, rgba(162, 250, 207, 0.04) 11.53%, rgba(100, 172, 255, 0.04) 55.13%);
+    backdrop-filter: blur(25px);
+    /* Note: backdrop-filter has minimal browser support */
+
+    border-radius: 50px;
+    padding: 1rem 1.25rem;
+    margin-top: 1.5rem;
+}
+.userStats-left,
+.userStats-right{
+    width: 50%;
+    /* border: 1px solid red; */
+}
+.userStats-right{
+    padding-top: 1.3rem;
+}
+.chart{
+    /* height: 300px !important; */
+}
+.learning-time {
+    background: rgba(100, 172, 255, 0.03);
+    backdrop-filter: blur(25px);
+    /* Note: backdrop-filter has minimal browser support */
+
+    border-radius: 28px;
+    /* Note: backdrop-filter has minimal browser support */
+    /* border: 2px solid #afbcda66; */
+    border-radius: 10px;
+    margin: 1rem 0;
+    padding: 0.9rem 1rem 1.75rem 1rem;
+    height: 280px;
+}
+.learning-time h4 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: .8rem;
+    line-height: 18px;
+    /* identical to box height */
+
+
+    color: rgba(67, 85, 126, 0.76);
+}
+.learning-time p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: .8rem;
+    line-height: 18px;
+    /* identical to box height */
+    margin-bottom: .5rem;
+
+    color: #4E6393;
+}
+
+.diamonds,.medals,.streak{
+    background: rgba(100, 172, 255, 0.04);
+    backdrop-filter: blur(25px);
+    /* Note: backdrop-filter has minimal browser support */
+    padding: .9rem 1.15rem;
+    border-radius: 21px;
+}
+.diamonds-head-number,
+.medals-head-number,
+.streak-head-number{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: flex-start;
+    align-items: center;
+}
+.diamonds-head h4,
+.medals-head h4,
+.streak-head h4{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: .75rem;
+    line-height: 18px;
+    /* identical to box height */
+
+
+    color: rgba(67, 85, 126, 0.76);
+}
+.diamonds-head h3,
+.medals-head h3,
+.streak-head h3{
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 51px;
+    /* identical to box height */
+    margin-right: .2rem;
+    letter-spacing: 0.01em;
+
+    color: #FFFFFF;
+}
+.diamonds-body{
+    padding-right: 2.2rem;
+}
+.diamonds-body p,
+.medals-body p{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    /* identical to box height */
+
+
+    color: #4E6393;
+}
+.userStats-right-row{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    gap: .8rem;
+}
+.medals{
+    width: 60%;
+}
+.streak{
+    width: 40%;
+}
+.medals-body{
+    margin-top: 0.15rem;
+}
+.streak h4{
+    margin-bottom: .5rem;
+}
+
+
+
+
+
+
+
+
+
+
