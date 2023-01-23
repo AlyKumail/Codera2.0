@@ -2912,7 +2912,7 @@ ul{
     font-style: normal;
     font-weight: 700;
     font-size: 2.7rem;
-    line-height: 61px;
+    line-height: 49px;
     letter-spacing: 0.04em;
     margin-left: .8rem;
     color: #CF4521;
@@ -3174,3 +3174,44 @@ ul{
     display: flex;
 }
 
+
+@media screen and (max-width: 1080px){
+    .avatar .main-body-left{
+        width: 100%;
+        display: flex;
+        /* border: 1px solid white; */
+    }
+    .main-body-left .avatar-profile{
+        width: 50% !important;
+        /* border: 1px solid red; */
+    }
+    .main-body-left .avatar-profile-img{
+        width: 50% !important;
+        /* padding: 0 30rem; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+}
+@media screen and (max-width: 768px){
+    .avatar .main-body-left{
+        flex-direction: column;
+        align-items: center;
+    }
+    .main-body-left .avatar-profile{
+        width: 80% !important;
+        /* border: 1px solid red; */
+    }
+    .main-body-left .avatar-profile-img{
+        width: 80% !important;
+        
+    }
+    .main-body-right{
+        width: 90% !important;
+        /* border: 1px solid red; */
+    }
+    .avatar-stats-icon{
+        margin-right: 1.5rem;
+    }
+}
