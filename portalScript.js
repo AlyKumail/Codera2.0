@@ -38,3 +38,9 @@ avatarStatsButton.addEventListener('click',()=>{
         avatarItems.classList.remove('avatarShow');
     }
 })
+
+
+
+
+
+

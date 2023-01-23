@@ -3262,6 +3262,8 @@ ul{
 /* MULTIPLAYER RIGHT */
 .multiplayer .main-body-right{
     padding-left: 2rem;
+    margin-top: .4rem;
+    
 }
 .user-search{
     background: #111F30;
@@ -3299,3 +3301,200 @@ ul{
     padding-left: 1rem;
     border-left: 2px solid rgba(54, 71, 106, 0.24);;
 }
+.multiplayer .main-body-right h4{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.1rem;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    margin-top: .6rem;
+    color: #43557E;
+}
+
+.user-accounts{
+    margin-top: 2rem;
+}
+.account{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem 0;
+    background: rgba(100, 172, 255, 0.04);
+    backdrop-filter: blur(25px);
+    /* Note: backdrop-filter has minimal browser support */
+    padding: .7rem 1rem;
+    border-radius: 21px;
+}
+.account-detail{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.account-detail-text-info{
+    gap: 1.2rem;
+}
+.account h5{
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.55rem;
+    line-height: 41px;
+    /* identical to box height */
+
+
+    color: #FFFFFF;
+}
+.account p{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.05rem;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+
+    color: rgba(255, 255, 255, 0.41);
+}
+.lightOrange-txt{
+    color: #935E42;
+    font-weight: 800;
+}
+.account-right img{
+    cursor: pointer;
+}
+
+
+.userModal{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.46);
+    display: none;
+}
+.displayUserModal{
+    display: block;
+}
+
+.account{
+    padding: 1rem 2.3rem !important;
+    /* display: block; */
+    border-top: 1px solid #a9b9dd46;
+    /* flex-direction: column !important; */
+}
+.view-user-info{
+    display: block;
+    position: relative;
+    width: 35%;
+    margin: 0 auto;
+    top: 15%;
+    z-index: 3;
+    padding: 3rem 2.3rem !important;
+    padding-top: 2rem !important;
+}
+.user-search-status{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: .9rem;
+    line-height: 21px;
+    /* identical to box height */
+
+    letter-spacing: 0.04em;
+
+    color: #30E1B9;
+
+}
+.view-user-info h5 img{
+    display: inline-block;
+    margin: 0 .35rem;
+}
+.view-user-stats{
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background: #070E1C;
+    border-radius: 18px;
+}
+.view-user-stats-items{
+    display: flex;
+    justify-content: space-between;
+    padding: .8rem 2rem;
+}
+.view-user-stats-items h6,
+.view-user-stats-badges h6{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: .9rem;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+
+    color: rgba(172, 172, 172, 0.27);
+}
+.view-user-stats-items div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.view-user-stats-items p{
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.1rem;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    gap: .3rem;
+    /* margin-left: 3px; */
+}
+.user-treasure{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse !important;
+    justify-content: center;
+    margin-top: 3px;
+}
+.user-treasure p{
+    margin-top: -15px;
+    color: #C98E54;
+
+}
+.view-user-stats-badges{
+    padding: .8rem 2rem;
+    display: flex;
+    gap: 1.15rem;
+}
+.view-user-stats-badges div{
+    display: flex;
+    gap: .5rem;
+}
+.battleBtn{
+    padding: .8em 1em;
+    background: #5DA8FA;
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 190px;
+    margin: 0 auto;
+    margin-top: 2.5rem;
+    gap: .35rem;
+}
+.battleBtn{
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 31px;
+    /* identical to box height */
+
+
+    color: #FFFFFF;
+}
+

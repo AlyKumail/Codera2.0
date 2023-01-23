@@ -20,6 +20,56 @@
         <title>Dashboard - Codera App</title>
     </head>
     <body>
+        <!-- USER MODAL -->
+        <div class="userModal">
+            <div class="view-user-info account">
+                <div class="flex-between-center">
+                    <!-- <div class="account-header"></div> -->
+                    <div class="account-left">
+                        <div class="account-detail">
+                            <img src="./images/user-account.png" alt="">
+                            <div class="account-detail-text">
+                                <h5 class="">Username <img src="./images/friend-status.png" alt=""> <span class="user-search-status">active</span></h5>
+                                <div class="account-detail-text-info flex-center">
+                                    <p>Rank: <span class="white-txt">10</span></p>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="account-right">
+                        <img src="./images/user-add.png" alt="">
+                    </div>
+                </div>
+                <div class="view-user-stats">
+                    <div class="view-user-stats-items">
+                        <div>
+                            <h6>Medals</h6>
+                            <p><img src="./images/view-user-medal.png" alt="">5</p> 
+                        </div>
+                        <div>
+                            <h6>League</h6>
+                            <div class="user-treasure">
+                                <p  class="">BRONZE</p> 
+                                <img src="./images/view-user-treasure.png" alt="">
+                            </div>
+                        </div>
+                        <div>
+                            <h6>Streak</h6>
+                            <p><img src="./images/view-user-fire.png" alt="">3</p> 
+                        </div>
+                    </div>
+                    <div class="view-user-stats-badges">
+                        <h6>Badges</h6>
+                        <div>
+                            <img src="./images/user-view-badge1.svg" alt="">
+                            <img src="./images/user-view-badge2.png" alt="">
+                            <img src="./images/user-view-badge3.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="battleBtn"> <img src="./images/battle.png" alt=""> BATTLE</a>
+            </div>
+        </div>
         <!-- Sidebar -->
         <div class="portal-container dashboard multiplayer">
             <div id="mobileNavPortal" class="mobileNav">
@@ -134,11 +184,67 @@
                             <input type="text" placeholder="Search Username">
                             <img src="./images/friend-search.png" alt="">
                         </div>
+                        <h4>3 Accounts Found</h4>
+                        <div class="user-accounts">
+                            <div class="account">
+                                <div class="account-left">
+                                    <div class="account-detail">
+                                        <img src="./images/user-account.png" alt="">
+                                        <div class="account-detail-text">
+                                            <h5>Jahan</h5>
+                                            <div class="account-detail-text-info flex-center">
+                                                <p>Rank: <span class="white-txt">10</span></p>
+                                                <p>League: <span class="lightOrange-txt">BRONZE</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="account-right">
+                                    <img src="./images/friend-view.png" alt="">
+                                </div>
+                            </div>
+
+                            <div class="account">
+                                <div class="account-left">
+                                    <div class="account-detail">
+                                        <img src="./images/user-account.png" alt="">
+                                        <div class="account-detail-text">
+                                            <h5>Jahan</h5>
+                                            <div class="account-detail-text-info flex-center">
+                                                <p>Rank: <span class="white-txt">10</span></p>
+                                                <p>League: <span class="lightOrange-txt">BRONZE</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="account-right">
+                                    <img class="friend-view" src="./images/friend-view.png" alt="">
+                                </div>
+                            </div>
+
+                            <div class="account">
+                                <div class="account-left">
+                                    <div class="account-detail">
+                                        <img src="./images/user-account.png" alt="">
+                                        <div class="account-detail-text">
+                                            <h5>Jahan</h5>
+                                            <div class="account-detail-text-info flex-center">
+                                                <p>Rank: <span class="white-txt">10</span></p>
+                                                <p>League: <span class="lightOrange-txt">BRONZE</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="account-right">
+                                    <img src="./images/friend-view.png" alt="">
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         <!-- <script src="./dashboardScript.js"></script> -->
-        <script src="./portalScript.js"></script>
+        <script src="./multiplayerScript.js"></script>
     </body>
 </html>
