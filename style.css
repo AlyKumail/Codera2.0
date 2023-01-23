@@ -3263,3 +3263,39 @@ ul{
 .multiplayer .main-body-right{
     padding-left: 2rem;
 }
+.user-search{
+    background: #111F30;
+    border-radius: 15px;
+    padding: 0.5rem .7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+.user-search input{
+    display: block;
+    border: none;
+    background: transparent;
+    color: whitesmoke;
+    /* border: 1px solid red; */
+    height: 100% !important;
+    padding: .7rem;
+    width: 80%;
+    font-size: 1.1rem;
+    letter-spacing: 1.5px;
+}
+.user-search input::placeholder{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 30px;
+
+    color: #43557E;
+}
+.user-search img{
+    margin-right: .75rem;
+    cursor: pointer;
+    padding-left: 1rem;
+    border-left: 2px solid rgba(54, 71, 106, 0.24);;
+}
