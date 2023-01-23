@@ -3215,3 +3215,51 @@ ul{
         margin-right: 1.5rem;
     }
 }
+
+
+/*############# MULTIPLAYER PAGE #############*/
+.multiplayer .main-body-left{
+    border-right: 4px solid rgba(255, 255, 255, 0.05);
+    margin-top: 1.6rem;
+}
+.friends{
+    padding-left: 2rem;
+    padding-right: 2.75rem;
+}
+.multiplayer .main-body-right h3,
+.multiplayer .main-body-left h3{
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.9rem;
+    line-height: 41px;
+    letter-spacing: 0.04em;
+
+    color: rgba(255, 255, 255, 0.26);
+}
+.friend-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(128.9deg, rgba(162, 250, 207, 0.04) 1.86%, rgba(100, 172, 255, 0.04) 89.97%);
+    backdrop-filter: blur(25px);
+    /* Note: backdrop-filter has minimal browser support */
+    padding: .7rem .8rem;
+    border-radius: 10px;
+    margin: .75rem 0;
+}
+.friend-item-left,
+.friend-item-right{
+    gap: 1rem;
+}
+.friend-badges{
+    gap: .35rem;
+}
+.friend-view{
+    cursor: pointer;
+}
+
+/* MULTIPLAYER RIGHT */
+.multiplayer .main-body-right{
+    padding-left: 2rem;
+}
