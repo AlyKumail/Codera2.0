@@ -3509,3 +3509,149 @@ ul{
     color: #FFFFFF;
 }
 
+
+
+
+/*############# PRICING PAGE #############*/
+.pricing-hero{
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+.pricing-hero h1{
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.8rem;
+    line-height: 61px;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 5rem 0;
+}
+.pricing-plan{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.plan{
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 15px;
+    padding: 1.2rem;
+    padding-bottom: 5.4rem;
+    width: 30%;
+    min-height: 380px;
+    position: relative;
+}
+.plan-body{
+    width: 68%;
+    margin: 0 auto;
+}
+.plan h4{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.04em;
+    display: flex;
+    color: rgba(255, 255, 255, 0.55);
+}
+.plan-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.plan-price{
+    display: flex;
+    align-items: center;
+    gap: 0rem;
+    margin-top: 2.85rem;
+}
+.plan-price img{
+    margin-top: -0.7rem;
+    margin-right: .2rem;
+}
+.plan-price h2{
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 4.7rem;
+    line-height: 32px;
+    letter-spacing: 0.12em;
+
+    color: #FFFFFF;
+}
+.plan p{
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 500;
+    font-size: .9rem;
+    line-height: 20px;
+    text-align: center;
+
+    color: #F7F7F7;
+}
+.gray-dash{
+    height: 2px;
+    width: 100%;
+    background: rgba(54, 71, 106, 0.24);
+    margin-bottom: 1.1rem;
+    margin-top: .3rem;
+}
+.plan-price-sub h5{
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.9rem;
+    line-height: 41px;
+    /* identical to box height */
+
+
+    color: #FFFFFF;
+}
+.plan-price-sub p{
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 500;
+    font-size: .9rem;
+    line-height: 0px;
+    margin-top: .3rem;
+
+    color: #9C9FA6;
+}
+.plan-price-sub {
+    margin-bottom: 2rem;
+}
+.plan-plus{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+}
+.plan-recommended{
+    position: absolute;
+    top: 0;
+    right: 8%;
+    transform: translateY(-50%);
+}
+@media screen and (max-width: 1350px){
+    .pricing-hero{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 768px){
+    .pricing-hero{
+        width: 100%;
+    }
+    .pricing-plan{
+        flex-direction: column;
+    }
+    .plan{
+        width: 80%;
+        margin: 1.7rem 0;
+    }
+}

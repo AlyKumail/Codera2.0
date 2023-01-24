@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap"
+            rel="stylesheet"
+        />
+        <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet"> 
+        <title>Codera App</title>
+    </head>
+    <body>
+        <!-- Modals -->
+        <div class="modal" id="loginModal">
+            <div class="modalForm">
+                <img id="crossbarLogin" src="./images/crossbar.png" alt="" />
+                <h2>Welcome Back!</h2>
+                <h3>Continue your streak today!</h3>
+                <p class="secondayPara">Earn Daily Rewards!</p>
+                <a href="#" class="modalBtn gr1"
+                    ><img src="./images/google.png" alt="" />
+                    <span>Log in With Google</span>
+                </a>
+                <div class="partition">
+                    <span class="linex"></span>
+                    <span>OR</span>
+                    <span class="linex"></span>
+                </div>
+                <form>
+                    <input type="text" placeholder="Username" />
+                    <input type="text" placeholder="Password" />
+                </form>
+                <a href="./dashboard.html" class="modalBtn gr2"> Begin </a>
+                <a class="forgot" href="#">Forgot Password?</a>
+                <a class="forgot" href="#">Forgot Username?</a>
+            </div>
+        </div>
+        <div id="joinModal">
+            <div class="modalForm">
+                <img id="crossbar" src="./images/crossbar.png" alt="" />
+                <h2>Welcome</h2>
+                <h3>Congratulations on taking the first step.</h3>
+                <p class="secondayPara">
+                    We wil never spam your inbox with annoying emails
+                </p>
+                <a href="#" class="modalBtn gr1"
+                    ><img src="./images/google.png" alt="" />
+                    <span>Log in With Google</span>
+                </a>
+                <div class="partition">
+                    <span class="linex"></span>
+                    <span>OR</span>
+                    <span class="linex"></span>
+                </div>
+                <form>
+                    <input type="text" placeholder="Name" />
+                    <input type="text" placeholder="Email" />
+                    <input type="text" placeholder="Password" />
+                </form>
+                <button href="#" class="modalBtn gr2">Begin</button>
+            </div>
+        </div>
+        <div id="mobileNav" class="mobileNav">
+            <img
+                id="navCross"
+                class="navCross"
+                src="./images/navCross.png"
+                alt=""
+            />
+            <div class="logo">
+                <img class="logoImg" src="./images/logo.png" alt="" />
+                <h1 class="header">COD<span class="blueGradient">ERA</span></h1>
+            </div>
+            <div>
+                <ul class="NavLinks">
+                    <li>
+                        <a class="NavItems NavActive" href="#"> Home </a>
+                    </li>
+                    <li>
+                        <a class="NavItems" href="#"> Code </a>
+                    </li>
+                    <li>
+                        <a class="NavItems" href="#"> Shop </a>
+                    </li>
+                    <li>
+                        <a class="NavItems" href="#"> Leaderboard </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="NavButtons">
+                <a id="loginBtnM" class="NavButtonsItem" href="#"> Log In </a>
+                <a
+                    id="joinNowM"
+                    class="NavButtonsItem NavButtonsItemBordered"
+                    href="#"
+                >
+                    Join Now
+                </a>
+            </div>
+        </div>
+        <div class="container">
+
+          
+            <div class="Navbar">
+                <div class="logo">
+                    <img class="logoImg" src="./images/logo.png" alt="" />
+                    <h1 class="header">
+                        COD<span class="blueGradient">ERA</span>
+                    </h1>
+                </div>
+                <img
+                    class="hamburger"
+                    id="hamburger"
+                    src="./images/hamburger.png"
+                    alt=""
+                />
+                <div class="desktop-nav">
+                    <ul class="NavLinks">
+                        <li>
+                            <a class="NavItems NavActive" href="#"> Home </a>
+                        </li>
+                        <li>
+                            <a class="NavItems" href="#"> Code </a>
+                        </li>
+                        <li>
+                            <a class="NavItems" href="#"> Shop </a>
+                        </li>
+                        <li>
+                            <a class="NavItems" href="#"> Leaderboard </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="NavButtons desktop-nav">
+                    <a id="loginBtn" class="NavButtonsItem" href="#">
+                        Log In
+                    </a>
+                    <a
+                        id="joinNow"
+                        class="NavButtonsItem NavButtonsItemBordered"
+                        href="#"
+                    >
+                        Sign Up
+                    </a>
+                </div>
+            </div>
+        </div>  
+
+        <!-- Pricing HERO -->
+        <div class="pricing-hero-container">
+            <div class="container">
+                <div class="pricing-hero">
+                    <h1>Invest in your child</h1>
+                    <div class="pricing-plan">
+                        <div class="plan">
+                            <h4>CODERA BASIC</h4>
+                            <div class="plan-body">
+                                <div class="plan-price">
+                                    <img src="./images/dollar.png" alt="">
+                                    <h2>0</h2>
+                                </div>
+                                <h4>Always Free</h4>
+                                <div class="gray-dash"></div>
+                                <p>Get a brief introduction to programming.</p>
+                            </div>
+                        </div>
+
+                        <div class="plan">
+                            <img src="./images/plan-plus.png" alt="" class="plan-plus">
+                            <img src="./images/plan-recommended.png" alt="" class="plan-recommended">
+                            <h4>CODERA PLUS <span class="blueGradText">+</span> </h4>
+                            <div class="plan-body">
+                                <div class="plan-price">
+                                    <img src="./images/dollar.png" alt="">
+                                    <h2>15</h2>
+                                    <div class="plan-price-sub">
+                                        <h5>.99</h5>
+                                        <p>/month</p>
+                                    </div>
+                                </div>
+                                <!-- <h4>Always Free</h4> -->
+                                <div class="gray-dash"></div>
+                                <p>Learn advanced programming skills
+                                    with custom support, parental tracking, and fun!
+                                    </p>
+                            </div>
+                        </div>
+
+                        <div class="plan">
+                            <h4> <img src="./images/plan-diamond.png" alt=""> CODERA PREMIUM</h4>
+                            <div class="plan-body">
+                                <div class="plan-price">
+                                    <img src="./images/dollar.png" alt="">
+                                    <h2>19</h2>
+                                    <div class="plan-price-sub">
+                                        <h5>.99</h5>
+                                        <p>/month</p>
+                                    </div>
+                                </div>
+                                <!-- <h4>Always Free</h4> -->
+                                <div class="gray-dash"></div>
+                                <p>Everything in plus with help the whole way through with 1 on 1 support.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        
+        <!-- Footer -->
+            <div class="footer-container">
+                <div class="container">
+                    <div class="footer">
+                        <div class="footer-left">
+                            <ul class="footer-navbar">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Pricing</a></li>
+                                <li><a href="#">Community</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-mid">
+                            <div class="logo">
+                                <img class="logoImg" src="./images/logo.png" alt="" />
+                                <h1 class="header">
+                                    COD<span class="blueGradient">ERA</span>
+                                </h1>
+                            </div>
+                            <p>Check out our Privacy Policy <br> and Terms of Service.</p>
+                            <span class="copyright-text">All Rights Reserved. © 2022</span>
+                        </div>
+                        <div class="footer-right">
+                            <div class="footer-socials">
+                                <a href="#"><img src="./images/insta.png" alt=""></a> 
+                                <a href="#"><img src="./images/twitter.png" alt=""></a> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <script src="./script.js"></script>
+            
+    </body>
+</html>
