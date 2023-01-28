@@ -3776,6 +3776,11 @@ ul{
     margin-bottom: 2rem;
     color: #F7F7F7;
 }
+.bg-lightblue{
+    background: rgba(93, 168, 250, 0.1);
+    border-radius: 15px;
+    padding: 1.2rem 0;
+}
 .pricing-body p{
     display: flex;
     align-items: center;
