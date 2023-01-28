@@ -3714,7 +3714,7 @@ ul{
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 1.15rem;
     line-height: 30px;
     text-align: center;
     letter-spacing: 0.04em;
@@ -3854,4 +3854,75 @@ ul{
     line-height: 31px;
 
     color: rgba(255, 255, 255, 0.6);
+}
+.pricing-detail{
+    width: 92%;
+    margin: 0 auto;
+    display: none;
+
+}
+.pricing-detail h2{
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.9rem;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    line-height: 31px;
+    /* identical to box height */
+    margin-top: 4rem;
+
+    color: #F7F7F7;
+}
+.pricing-detail-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid rgba(54, 71, 106, 0.24);
+    padding-bottom: .65rem;
+    margin: 1rem 0;
+}
+.pricing-detail-item p{
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 26px;
+    /* identical to box height */
+
+    color: #FFFFFF;
+}
+.lightGrayBg{
+    /* background: rgba(255, 255, 255, 0.02); */
+    /* padding: .2rem 1rem; */
+}
+
+@media screen and (max-width: 768px){
+    .pricing-detail{
+        display: block;
+    }
+    .pricint-table-header,
+    .pricing-body{
+        display: none;
+    }
+    
+}
+@media screen and (max-width: 1183px){
+    .pricint-table-header h2{
+        width: 70%;
+        margin: 0 auto;
+        /* font-size: rem; */
+        
+    }
+    .pricint-table-header .col2,.col3,.col4{
+        padding: 5.5rem 0;
+    }
+}
+@media screen and (max-width: 1183px){
+    
+    .pricint-table-header .col2,.col3,.col4{
+        padding: 7rem 0;
+       
+    }
 }
