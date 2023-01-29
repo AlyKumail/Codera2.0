@@ -3785,7 +3785,7 @@ ul{
     display: flex;
     align-items: center;
     gap: .5rem;
-
+    position: relative;
     font-family: 'Space Grotesk';
     font-style: normal;
     font-weight: 500;
@@ -3800,6 +3800,10 @@ ul{
 .body-col4 p{
     justify-content: center;
     color: #636873;
+}
+.body-col1 p{
+    /* border: 1px solid white; */
+    width: auto !important;
 }
 .body-col2 h3,
 .body-col3 h3,
@@ -3831,9 +3835,51 @@ ul{
 .pricing-support p:last-child{
     border-bottom: 0px;
 }
+.info-wrap{
+    border: 1px solid red;
+}
+.displayInfo{
+    border: 1px solid white;
+    position: absolute;
+    top: 0;
+    right: 7%;
+    transform: translateY(-100%);
+    width: 150px;
+    background-color: white;
+    color: #000;
+    padding: .5rem;
+    text-align: center  ;
+    z-index: 3;
+    transition: all 1s ease;
+    /* position: relative; */
+}
+.displayInfo::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    transform: translateY(100%);
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 10px solid rgb(255, 255, 255);
+
+}
+.hideInfo{
+    display: none;
+    transition: all 1s ease;
+
+}
+.showInfo{
+    display: block;
+    transition: all 1s ease;
+
+}
 .pricing-footer{
-    margin: 4rem 0;
+    margin: 4.85rem 0;
     margin-left: 1rem;
+    margin-bottom: 6rem;
 }
 .pricing-footer h2{
     font-family: 'Space Grotesk';

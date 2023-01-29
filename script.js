@@ -90,3 +90,20 @@ FAQs.forEach(faq=>{
         }
     })
 })
+
+// Pricing
+
+const pricingInfos = document.querySelectorAll('.pricing-info');
+
+pricingInfos.forEach(info=>{
+    info.addEventListener('mouseenter',(event)=>{
+        event.target.parentElement.children[1].classList.add('showInfo');
+        // event.target.parentElement.children[1].classList.remove('hideInfo');
+        console.log(event.target.parentElement.children[1]);
+    })
+    info.addEventListener('mouseleave',(event)=>{
+        event.target.parentElement.children[1].classList.remove('showInfo');
+        // event.target.parentElement.children[1].classList.remove('hideInfo');
+        console.log(event.target.parentElement.children[1]);
+    })
+})
