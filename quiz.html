@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap"
+            rel="stylesheet"
+        />
+        <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet"> 
+        <title>Quiz - Codera App</title>
+        <style>
+            body{
+                background-color: #0A1016;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="quiz-container">
+            <div class="container">
+                <div class="quiz">
+                    <h3>Drag the code snippets to <br> complete the function!</h3>
+                    <div class="quiz-answers-box">
+                        <div class="answer-box"></div>
+                        <div class="answer-box"></div>
+                        <div class="answer-box"></div>
+                        <div class="answer-box"></div>
+                    </div>
+                    <div class="quiz-answers">
+                        <div id="answer1" class="answer" draggable="true">def open():</div>
+                        <div id="answer2" class="answer" draggable="true">print(“open”)</div>
+                        <div id="answer3" class="answer" draggable="true">if(flag):</div>
+                        <div id="answer4" class="answer" draggable="true">flag = True</div>
+                    </div>
+                </div>
+                <div class="quiz-submit">
+                    <a href="#">Got it</a>
+                </div>
+            </div>
+        </div>
+        <script src="./quiz.js"></script>
+    </body>
+</html>
