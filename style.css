@@ -2013,11 +2013,32 @@ ul{
     opacity: .8;
 }
 
+@media screen and (max-width: 768px) {
+    .footer{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+
+        padding: 1.5rem 0 1.5rem 0
+    }
+    .footer-navbar{
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+    .footer-mid{
+        gap: 1.5rem;
+    }
+    .footer-right{
+        margin-top: 1.2rem;
+    }
+}
+
 
 /* ######## DASHBOARD #######*/
 .portal-container{
-    width: 97%;
-    max-width: 1440px;
+    width: 100%;
+    max-width: none;
     margin: 0 auto;
     position: relative;
 }
@@ -2137,7 +2158,6 @@ ul{
 }
 .main-navbar-active{
     background: linear-gradient(128.9deg, rgba(162, 250, 207, 0.1) 1.86%, rgba(100, 172, 255, 0.1) 89.97%);
-    backdrop-filter: blur(25px);
     /* Note: backdrop-filter has minimal browser support */
     padding: .5em .9em;
     border-radius: 10px;
@@ -2183,16 +2203,21 @@ ul{
     color: white;
     display: flex;
     justify-content: space-between;
+    align-items: space-between;
     gap: 1.75rem;
 }
 .main-body-left{
     width: 44%;
-    /* border: 1px solid blue; */
 }
 .main-body-right{
     width: 56%;
-    /* border: 1px solid red; */
 
+    padding-top: 0rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    
 }
 .main-body h1{
     font-family: 'Poppins';
@@ -2583,15 +2608,15 @@ ul{
     color: rgba(255, 255, 255, 0.6);
 }
 
-.main-body-right{
-    padding-top: 1rem;
-}
+
 .main-body-right-row{
     display: flex;
     justify-content: space-between;
     /* align-items: center; */
-    gap: 1.35rem;
-    margin-top: 1.5rem;
+    gap: 1.3rem;
+    margin-top: 0rem;
+    /* border: 1px solid cyan; */
+    width: 100%;
 }
 .main-body-right-row .row-left,
 .main-body-right-row .row-right{
@@ -2632,6 +2657,8 @@ ul{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-left: .8rem;
+    padding-right: .8rem;
 }
 .progress-month {
     padding: 0.5rem 0.8rem;
@@ -2652,12 +2679,16 @@ ul{
 }
 .progress-body-wrap {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
     width: auto;
     /* border: 1px solid rgb(99, 89, 89); */
     margin: 0 auto;
     flex-wrap: wrap;
     margin-top: 0.75rem;
-    gap: .26rem;
+    padding-left: .8rem;
+    padding-right: .8rem;
+    gap: .3rem;
 }
 .progress-body p {
     font-family: 'Space Grotesk';
@@ -2673,7 +2704,7 @@ ul{
     padding: 0.3rem 0;
     width: 13%;
     text-align: center;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     /* margin: 0.3rem; */
 }
 .progress-completed {
@@ -2779,6 +2810,9 @@ ul{
 }
 
 /* Stats */
+.userStats-container{
+    width: 100%;
+}
 .userStats{
     display: flex;
     justify-content: space-between;
@@ -2802,6 +2836,8 @@ ul{
 }
 .userStats-right{
     padding-top: 1.3rem;
+    height: 100%;
+
 }
 .chart{
     /* height: 300px !important; */
