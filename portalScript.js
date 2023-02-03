@@ -43,4 +43,3 @@ avatarStatsButton.addEventListener('click',()=>{
 
 
 
-

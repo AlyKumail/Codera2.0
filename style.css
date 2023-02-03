@@ -2421,6 +2421,10 @@ ul{
 .level-icons{
     gap: .75rem;
 }
+.level-icons a{
+    display: flex;
+    align-items: center;
+}
 .level-text p {
     font-family: 'Courier';
     font-style: normal;
@@ -2773,6 +2777,98 @@ ul{
     width:18%;
     max-width: 100% !important;
 }
+
+
+/* ------------ ACHEIVEMENT ------------- */
+.acheivements-modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #0e1a33ea;
+    width: 55%;
+    height: 65%;
+    max-height: 580px;
+    padding: 2rem 3rem;
+    border-radius: 10px;
+    /* backdrop-filter: blur(25px); */
+    box-shadow: 0px 0px 18px 20px rgba(0, 0, 0, 0.25);
+    z-index: 99 !important;
+    overflow-y: auto;
+}
+.acheivements-modal h2 {
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+}
+.acheivements-modal img {
+    width: 20px;
+    cursor: pointer;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+}
+/* .acheivements-modal::before {
+    content: "";
+    position: fixed;
+    display: inline-block;
+    position: absolute;
+    background: #333;
+    width: 100vh;
+    height: 100vh;
+} */
+
+.acheivements-modal::-webkit-scrollbar {
+    width: 0.25em;
+}
+
+.acheivements-modal::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.65);
+}
+
+.acheivements-modal::-webkit-scrollbar-thumb {
+    background-color: #43557e;
+    outline: 1px solid #3a4862;
+    border-radius: 60px;
+}
+
+.acheivement-item {
+    background: #081020;
+    border: 1px solid rgba(15, 202, 155, 0.54);
+    border-radius: 5px;
+    padding: 1.25rem;
+    font-family: "Space Grotesk";
+    margin: 0.45rem 0;
+
+    width: 100%;
+}
+
+.acheievement-item__left h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 41px;
+
+    color: rgba(52, 211, 153, 0.35);
+}
+
+.acheievement-item__right h3 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 0.5rem;
+    color: #34d399;
+}
+.acheievement-item__right p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 13px;
+
+    color: rgba(255, 255, 255, 0.66);
+}
+
 .acheivement{
     background: #081020;
     border: 1px solid rgba(15, 202, 155, 0.54);
