@@ -2192,6 +2192,11 @@ ul{
     }
     .main-header-navbar{
         margin-bottom: .8rem;
+        display: none;
+    }
+    .mobile-show{
+        display: block !important;
+        margin-top: 1.85rem;
     }
 }
 
@@ -2247,8 +2252,13 @@ ul{
         margin: 0 auto;
         /* border: 1px solid blue; */
     }
-    .main-body{
-        /* width: 80%; */
+    .main-body .main-body-right-row{
+        flex-direction: column;
+        margin-bottom: 1.6rem;
+    }
+    .main-body .main-body-right-row .row-left,
+    .main-body .main-body-right-row .row-right{
+        width: 100%;
     }
 }
 
@@ -2684,7 +2694,7 @@ ul{
 .progress-body-wrap {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     width: auto;
     /* border: 1px solid rgb(99, 89, 89); */
     margin: 0 auto;
@@ -3048,6 +3058,17 @@ ul{
 }
 .streak h4{
     margin-bottom: .5rem;
+}
+
+@media screen and (max-width: 768px){
+    .userStats{
+        flex-direction: column;
+        padding: 1.75rem;
+    }
+    .userStats-left,
+    .userStats-right{
+        width: 100%;
+    }
 }
 
 /*######### AVATAR #########*/
@@ -3683,6 +3704,12 @@ ul{
 
 
     color: #FFFFFF;
+}
+
+@media screen and (max-width: 768px){
+    .view-user-info{
+        width: 95%;  
+    }
 }
 
 
