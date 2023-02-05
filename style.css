@@ -2689,20 +2689,25 @@ ul{
     color: #FFFFFF;
 }
 .progress-body {
-    
+    /* border: 1px solid red; */
+   
 }
 .progress-body-wrap {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: first baseline;
+    flex-wrap: wrap;
+
+   
     width: auto;
     /* border: 1px solid rgb(99, 89, 89); */
     margin: 0 auto;
-    flex-wrap: wrap;
     margin-top: 0.75rem;
     padding-left: .8rem;
     padding-right: .8rem;
-    gap: .3rem;
+    gap: .5rem;
+    
+    /* border: 1px solid blue; */
 }
 .progress-body p {
     font-family: 'Space Grotesk';
@@ -2712,7 +2717,6 @@ ul{
     line-height: 20px;
     /* flex: auto;   */
     color: #FFFFFF;
-
     border: 2px solid rgba(67, 85, 126, 0.3);
     border-radius: 10px;
     padding: 0.3rem 0;
@@ -2787,6 +2791,103 @@ ul{
     width:18%;
     max-width: 100% !important;
 }
+
+.badge-popup{
+    position: absolute;
+    width: 260px;
+    height: 260px;
+    background: transparent;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: none;
+}
+.badge-popup::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #171B20;
+    left: 10%;
+    color: #333;
+}
+.badge-popup-img,
+.badge-popup-body{
+    width: 100%;
+    height: 50%;
+    /* border: 1px solid blue; */
+}
+
+.badge-popup-img-wrap{
+    width: auto;
+    /* border: 1px solid rgb(214, 91, 111); */
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.badge-popup-img-wrap img{
+    width: 88px;
+    height: 88px;
+    animation: rotation 2s infinite linear;
+}
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(359deg);
+      }
+}
+.bgp1{
+    background: url('./images/badge-bg.png') no-repeat center center/cover;
+    border-radius: 18px 18px 0px 0px;
+}
+
+.badge-popup-body{
+    background: url('./images/badge-popup-bg-body.png') no-repeat center center/cover;
+    padding: .7rem;
+}
+.badge-popup-body h4{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: 0.04em;
+
+    color: #FFFFFF;
+}
+.badge-popup-body p{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 8px;
+    line-height: 12px;
+    letter-spacing: 0.04em;
+    color: #637EBA;
+}
+
+.badge-popup-body h5{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 15px;
+    /* identical to box height */
+
+    letter-spacing: 0.04em;
+
+    color: #FFFFFF;
+}
+
+.show{
+    display: block !important;
+}
+
 
 
 /* ------------ ACHEIVEMENT ------------- */
@@ -3068,6 +3169,11 @@ ul{
     .userStats-left,
     .userStats-right{
         width: 100%;
+    }
+    .acheivements-modal {
+       
+        width: 95%;
+        
     }
 }
 
@@ -3470,6 +3576,7 @@ ul{
     justify-content: space-between;
     align-items: center;
     margin-top: 1rem;
+    
 }
 .user-search input{
     display: block;
@@ -3497,6 +3604,7 @@ ul{
     cursor: pointer;
     padding-left: 1rem;
     border-left: 2px solid rgba(54, 71, 106, 0.24);;
+    
 }
 .multiplayer .main-body-right h4{
     font-family: 'Poppins';
@@ -3710,6 +3818,21 @@ ul{
     .view-user-info{
         width: 95%;  
     }
+    .account{
+        padding: .2rem 2.3rem !important;
+    }
+    .multiplayer .main-body-right{
+        padding-left: 1rem;
+    }
+    .friends {
+        padding-left: 0rem;
+        padding-right: 0rem;
+        width:90%;
+        margin: 0 auto;
+      }
+      .user-search{
+        width:95%;
+      }
 }
 
 
@@ -4204,12 +4327,13 @@ ul{
     height: 53px;
     border: 2px dashed rgba(63, 177, 255, 0.68);
     border-radius: 10px;
-    margin: 1rem 0;
+    margin: 0rem 0;
+    margin-top: .9rem;
 }
 .quiz-answers{
     display: flex;
     gap: .7rem;
-    margin-top: 2.5rem;
+    margin-top: 0rem;
 }
 .answer{
     min-width: 160px;
@@ -4233,10 +4357,12 @@ ul{
     color: #FFFFFF;
 }
 .blueBorder{
-    background: linear-gradient(89.78deg, #0B111A 0.33%, #131D2E 92.85%);
     border: 1px solid #3083BC;
+}
+.boxDropped{
     box-shadow: 0px 3px 19px #000000;
     border-radius: 10px;
+    background: linear-gradient(89.78deg, #0B111A 0.33%, #131D2E 92.85%);
 }
 .hide{
     opacity: 0;
@@ -4258,4 +4384,16 @@ ul{
     border: 2px solid #A2FACF;
     border-radius: 8px;
     padding: .3em 1.7em;
+}
+
+.quizAnswersWrap{
+    border: 1px solid red;
+}
+.quiz-answers{
+    /* border: 1px solid blue; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 0;
 }
